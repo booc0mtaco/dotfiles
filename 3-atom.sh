@@ -26,7 +26,7 @@ fi
 #
 
 # Themes
-apm install solarized-dar-ui
+apm install solarized-dark-ui
 apm install solarized-one-dark-syntax
 apm install solarized-seti-ui
 apm install atom-solarized-dark-ui

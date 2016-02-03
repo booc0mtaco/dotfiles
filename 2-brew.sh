@@ -4,6 +4,16 @@
 # It assumes the init script has already been run, which installs system-wide dependencies and
 # such. Checks for .hasrun_init in home directory.
 
+if [ -e ~/.hasrun_init ]
+then
+    echo "Installing brew scripts . . ."
+else
+    echo "***"
+    echo "***Please run 1-* scripts first!"
+    echo "***"
+    exit -1
+fi
+
 # homebrew enhancements
 brew tap caskroom/cask     # install desktop apps via command line
 brew tap homebrew/versions # install different versions of commandline tools, etc.
@@ -59,3 +69,9 @@ brew cask install sourcetree	     # Alternative Git GUI
 # Browsers
 brew cask install firefox	     # Mozilla browser using Gecko
 brew cask install google-chrome	     # Google browser using Blink
+
+echo "***"
+echo "*** Installed brew packages successfully"
+echo "***"
+
+exit 0

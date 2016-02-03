@@ -4,6 +4,12 @@
 # It assumes the init script has already been run, which installs system-wide dependencies and
 # such. Checks for .hasrun_init in home directory.
 
+if [ -e ~/.hasrun_brew ]
+then
+    echo "Homebrew setup has already run. To re-run, remove ~/.hasrun_brew ."
+    exit -2
+fi
+
 if [ -e ~/.hasrun_init ]
 then
     echo "Installing brew scripts . . ."

@@ -5,6 +5,12 @@
 # - Settings include things from the ~/.atom directory
 # - Plugins/themes include packages to be registered via `apm`
 
+if [ -e ~/.hasrun_atom ]
+then
+    echo "Atom setup has already run. To re-run, remove ~/.hasrun_atom ."
+    exit -2
+fi
+
 if [ -e ~/.hasrun_brew ]
 then
     echo "Begin atom editor setup . . ."

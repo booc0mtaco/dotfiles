@@ -27,6 +27,5 @@
   "git-blame": {}
   "git-plus": {}
   "one-dark-ui": {}
-  pigments: {}
   welcome:
     showOnStartup: false

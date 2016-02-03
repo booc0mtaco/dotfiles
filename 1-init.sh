@@ -12,7 +12,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Copy configuration files into their proper places
-cp config/.* ~
+cp config/* ~
 
 # Once everything is done, drop a little file in the home directory to say so
 touch ~/.hasrun_init

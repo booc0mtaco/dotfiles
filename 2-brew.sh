@@ -18,6 +18,7 @@ fi
 brew tap caskroom/cask     # install desktop apps via command line
 brew tap homebrew/versions # install different versions of commandline tools, etc.
 brew tap caskroom/versions # install different versions of apps
+brew tap caskroom/fonts    # install custom fonts via command line
 
 #
 # CLI Section
@@ -27,6 +28,7 @@ brew tap caskroom/versions # install different versions of apps
 brew install ack		    # intelligent text search through files
 brew install tmux		    # replacement for screen. sessions for shells
 brew install tree		    # see the contents of a directory structure
+brew install wget		    # retrieve files from the internet
 
 brew install fish		    # alternative CLI shell for the 90s!
 
@@ -70,8 +72,15 @@ brew cask install sourcetree	     # Alternative Git GUI
 brew cask install firefox	     # Mozilla browser using Gecko
 brew cask install google-chrome	     # Google browser using Blink
 
+# Fonts
+brew cask install font-fira-code
+brew cask install font-fira-mono
+
 echo "***"
 echo "*** Installed brew packages successfully"
+echo "*** Symlinked commands: apm, atom.sh, macdown, stree"
 echo "***"
+
+touch ~/.hasrun_brew
 
 exit 0

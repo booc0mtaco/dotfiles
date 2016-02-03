@@ -31,4 +31,4 @@ This will install many useful tools and resources that are managed via homebrew,
 
 I plan to add any needed [npm](https://www.npmjs.com) tools to a script `3-npm.js`, which may include things like [gulp](http://gulpjs.com), [grunt](http://gruntjs.com), etc. 
 
-I also want to complete set up as much as possible with other apps like [atom](https://atom.io), [fish shell](https://fishshell.com), and other ones. For atom, it will include installing plugins. For fish, it will include installing custom functions, and tools like [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). Those will go in files probably at the `3-` level since they arequire brew installations to complete.
+I also want to complete set up as much as possible with other apps [fish shell](https://fishshell.com), and other ones. For fish, it will include installing custom functions, and tools like [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). Those will go in files probably at the `3-` level since they arequire brew installations to complete.

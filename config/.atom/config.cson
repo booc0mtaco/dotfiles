@@ -1,0 +1,32 @@
+"*":
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake:
+      maxIntensity: 8
+      minIntensity: 2
+  core:
+    themes: [
+      "solarized-seti-ui"
+      "solarized-dark-syntax"
+    ]
+  docblockr: {}
+  pigments:
+    supportedFiletypes: [
+      ".scss"
+    ]
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 12
+    invisibles: {}
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "git-blame": {}
+  "git-plus": {}
+  "one-dark-ui": {}
+  pigments: {}
+  welcome:
+    showOnStartup: false

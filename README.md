@@ -26,6 +26,9 @@ This will install tools that don't have any package managers, etc. Right now, it
 
 This will install many useful tools and resources that are managed via homebrew, and it's caskrooms. Requires homebrew being installed (you *did* read the instructions above, right?)
 
+### `3-atom.sh`
+
+Set up the atom editor with plugins and settings. Set up usage options by copying the apprpriate settings into place.
 
 ## Future developments
 

@@ -1,0 +1,16 @@
+/* Basics */
+
+pre, kbd, textarea {
+	font-family: "Fira Code" !important;
+}
+
+/* JIRA */
+
+.activity-comment {
+	font-family: "Fira Code" !important;
+}
+
+/* Crucible */
+.lineContent, .diffContent {
+	font-family: "Fira Code" !important;
+}

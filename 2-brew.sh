@@ -20,6 +20,9 @@ else
     exit -1
 fi
 
+brew update
+brew upgrade --all
+
 # homebrew enhancements
 brew tap caskroom/cask     # install desktop apps via command line
 brew tap homebrew/versions # install different versions of commandline tools, etc.

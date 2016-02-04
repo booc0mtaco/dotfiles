@@ -1,6 +1,6 @@
 /* Basics */
 
-pre, kbd, textarea {
+code, pre, kbd, textarea {
 	font-family: "Fira Code" !important;
 }
 

@@ -80,6 +80,9 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
+# Have Safari always preserve the session after shutdown
+defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -bool true
+
 # Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true

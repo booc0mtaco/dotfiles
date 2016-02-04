@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Set up oh-my-fish . This depends on fish being installed. 
+
+if [ -e ~/.hasrun_omf ]
+then
+    echo "oh-my-fish has already been set up. To re-run, remove ~/.hasrun_omf ."
+    exit -2
+fi
+
+if [ -e ~/.hasrun_brew ]
+then
+    echo "Installing oh-my-fish sell extension framework . . ."
+else
+    echo "Level 2 commands have not been run yet!"
+    exit -1
+fi 
+
+curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+
+# omf help
+# omf update
+
+# Install omf packages and themes
+# set up robbyrussell as well
+
+# omf install robbyrussell
+
+echo "***"
+echo "*** oh-my-fish successfully installed."
+echo "*** install robbyrussell via omf install robbyrussell"
+echo "***"
+
+touch ~/.hasrun_omf

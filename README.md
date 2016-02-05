@@ -24,14 +24,34 @@ This will install tools that don't have any package managers, etc. Right now, it
 
 ### `2-brew.sh`
 
-This will install many useful tools and resources that are managed via homebrew, and it's caskrooms. Requires homebrew being installed (you *did* read the instructions above, right?)
+This will install many useful tools and resources that are managed via homebrew, and it's caskrooms. Requires homebrew being installed (you *did* read the instructions above, right?).
+
+Once this completes, a few manual steps remain:
+
+- setting up some apps to start at runtime.
+	- caffeine
+	- itsycal
+	- quicksilver
+	- etc.
+
+- for a full list of installed applications, run `brew cask list`
 
 ### `3-atom.sh`
 
 Set up the atom editor with plugins and settings. Set up usage options by copying the apprpriate settings into place.
 
+### `3-oh-my-fish.sh`
+
+Install the oh my fish tools. After installation, it is safe to switch over to fish shell! But, a few things to install remain:
+
+#### Install robbyrussell shell prompt
+
+I like this one. Using `omf`, you can install it with
+
+	omf install robbyrussell
+	
+Once done, update the default shell with `chsh`. The path to fish will be `/usr/local/bin/fish`.
+
 ## Future developments
 
 I plan to add any needed [npm](https://www.npmjs.com) tools to a script `3-npm.js`, which may include things like [gulp](http://gulpjs.com), [grunt](http://gruntjs.com), etc. 
-
-I also want to complete set up as much as possible with other apps [fish shell](https://fishshell.com), and other ones. For fish, it will include installing custom functions, and tools like [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). Those will go in files probably at the `3-` level since they arequire brew installations to complete.

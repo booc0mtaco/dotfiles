@@ -16,6 +16,14 @@ The numbers (`1-` and such) are there as guidance and grouping of "configuration
 
 It's very likely I won't be adding much in the way of safe guards here, so if you want to try these out, be sure to back up any existing dot files, etc. you already have.
 
+### Manual things not included here
+
+* I'm a big fan of [solarized][solarized] color schemes. Use this link to install it for  Terminal.app
+* You'll need to set each app that you want to start on login manually. Each has its own method.
+* Logins aren't handled by these scripts, for obvious reasons. 
+
+[solarized]: http://ethanschoonover.com/solarized
+
 ## Manifest
 
 ### `1-init.sh`

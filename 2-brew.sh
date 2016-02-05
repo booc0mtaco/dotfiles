@@ -85,6 +85,14 @@ brew cask install google-chrome	     # Google browser using Blink
 brew cask install font-fira-code
 brew cask install font-fira-mono
 
+# Set up the font in Safari, so all monospaced text blocks use it
+# Restart Safari.app after setting this
+defaults write com.apple.Safari UserStyleSheetEnabled 1
+defaults write com.apple.Safari UserStyleSheetLocationURLString "~/.firacode.css"
+defaults write com.apple.Safari WebKitUserStyleSheetEnabledPreferenceKey 1
+defaults write com.apple.Safari WebKitUserStyleSheetLocationPreferenceKey "~/.firacode.css"
+killall "Safari" &> /dev/null
+
 echo "***"
 echo "*** Installed brew packages successfully"
 echo "*** Symlinked commands: apm, atom.sh, macdown, stree"

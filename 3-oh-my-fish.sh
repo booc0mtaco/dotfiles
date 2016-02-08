@@ -28,7 +28,7 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 echo "***"
 echo "*** oh-my-fish successfully installed."
-echo "*** install robbyrussell via omf install robbyrussell"
+echo "*** Review README.md to run post-install commands!"
 echo "***"
 
 touch ~/.hasrun_omf

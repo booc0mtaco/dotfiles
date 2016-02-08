@@ -69,6 +69,14 @@ brew cask install itsycal	     # system level calendar in a nice little icon
 brew cask install qlmarkdown	     # QuickLook : markdown files
 brew cask install qlstephen	     # Quicklook : text files of different sorts
 brew cask install suspicious-package # Quicklook : view inside zip files before opening them
+brew cask install qlcolorcode        # Quicklook : color code ... code
+brew cask install quicklook-json     # Quicklook : provide structure to JSON files
+brew cask install qlprettypatch      # Quicklook : show patch files with diff information
+brew cask install quicklook-csv      # Quicklook : show CSV information in context
+brew cask install qlimagesize        # Quicklook : show image metrics and info in context
+brew cask install betterzipql        # Quicklook : show contents of zip file before extracting
+
+# Screensavers
 brew cask install aerial             # AppleTV screensaver for desktop
 
 # And set up the screensaver . . .

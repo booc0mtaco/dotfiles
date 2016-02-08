@@ -51,6 +51,7 @@ apm install activate-power-mode
 # Project Management & Structure
 apm install project-manager
 apm install emmet
+apm install editorconfig
 
 #
 # copy over settings to ~/.atom

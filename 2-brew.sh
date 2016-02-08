@@ -69,6 +69,12 @@ brew cask install itsycal	     # system level calendar in a nice little icon
 brew cask install qlmarkdown	     # QuickLook : markdown files
 brew cask install qlstephen	     # Quicklook : text files of different sorts
 brew cask install suspicious-package # Quicklook : view inside zip files before opening them
+brew cask install aerial             # AppleTV screensaver for desktop
+
+# And set up the screensaver . . .
+defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen
+Savers/Aerial.saver"
+defaults -currentHost write com.apple.screensaver moduleName -string "Aerial"
 
 # Image Tools
 brew cask install imageoptim	     # Optimize JPEG / PNG images

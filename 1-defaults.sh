@@ -80,6 +80,9 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
+# Set Safari's default home page to untropy.net
+defaults write com.apple.Safari HomePage -string "http://untropy.net/start"
+
 # Have Safari always preserve the session after shutdown
 defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -bool true
 

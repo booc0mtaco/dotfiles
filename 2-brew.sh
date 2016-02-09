@@ -59,11 +59,21 @@ brew cask install cool-retro-term    # make your screen look/feel like an old CR
 brew cask install macdown	     # edit markdown files and preview them live
 
 # Desktop Tools
+brew cask install xquartz	     # open Source compositing engine
+
+# ... and those that should start up by default ...
 brew cask install caffeine	     # keep your computer awake with one click
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Caffeine.app", hidden:true, name: "Caffeine"}'
+
 brew cask install spectacle	     # manage keyboard shortcuts to move windows about
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Spectacle.app", hidden:true, name: "Spectacle"}'
+
 brew cask install quicksilver	     # old-school launcher and manager for system behaviors
-brew cask install xquartz	     # open Source compositing engine 
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Quicksilver.app", hidden:true, name: "Quicksilver"}'
+
 brew cask install itsycal	     # system level calendar in a nice little icon
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Itsycal.app", hidden:true, name: "Itsycal"}'
+
 
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files
@@ -80,8 +90,7 @@ brew cask install betterzipql        # Quicklook : show contents of zip file bef
 brew cask install aerial             # AppleTV screensaver for desktop
 
 # And set up the screensaver . . .
-defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen
-Savers/Aerial.saver"
+defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen Savers/Aerial.saver"
 defaults -currentHost write com.apple.screensaver moduleName -string "Aerial"
 
 # Image Tools

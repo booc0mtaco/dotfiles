@@ -34,14 +34,6 @@ This will install tools that don't have any package managers, etc. Right now, it
 
 This will install many useful tools and resources that are managed via homebrew, and it's caskrooms. Requires homebrew being installed (you *did* read the instructions above, right?).
 
-Once this completes, a few manual steps remain:
-
-- setting up some apps to start at runtime.
-	- caffeine
-	- itsycal
-	- quicksilver
-	- etc.
-
 - for a full list of installed applications, run `brew cask list`
 
 ### `3-atom.sh`

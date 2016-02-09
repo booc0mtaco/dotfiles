@@ -106,6 +106,7 @@ defaults write com.apple.Safari UserStyleSheetLocationURLString "~/.firacode.css
 defaults write com.apple.Safari WebKitUserStyleSheetEnabledPreferenceKey 1
 defaults write com.apple.Safari WebKitUserStyleSheetLocationPreferenceKey "~/.firacode.css"
 killall "Safari" &> /dev/null
+open -a safari
 
 echo "***"
 echo "*** Installed brew packages successfully"

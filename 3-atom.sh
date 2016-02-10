@@ -44,6 +44,8 @@ apm install color-picker
 apm install pigments
 apm install atom-beautify
 apm install color-picker
+apm install highlight-selected
+apm install minimap
 
 # Fun (?)
 apm install activate-power-mode
@@ -59,6 +61,8 @@ apm install editorconfig
 
 mkdir -p ~/.atom
 cp config/.atom/* ~/.atom
+
+killall "Atom" &> /dev/null
 
 echo "***"
 echo "*** Atom plugins, themes, and settings have been applied."

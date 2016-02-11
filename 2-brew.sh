@@ -63,17 +63,19 @@ brew cask install xquartz	     # open Source compositing engine
 
 # ... and those that should start up by default ...
 brew cask install caffeine	     # keep your computer awake with one click
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Caffeine.app", hidden:true, name: "Caffeine"}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Caffeine.app", hidden:true, name:"Caffeine"}'
 
 brew cask install spectacle	     # manage keyboard shortcuts to move windows about
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Spectacle.app", hidden:true, name: "Spectacle"}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
 
 brew cask install quicksilver	     # old-school launcher and manager for system behaviors
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Quicksilver.app", hidden:true, name: "Quicksilver"}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Quicksilver.app", hidden:true, name:"Quicksilver"}'
 
 brew cask install itsycal	     # system level calendar in a nice little icon
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Itsycal.app", hidden:true, name: "Itsycal"}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Itsycal.app", hidden:true, name:"Itsycal"}'
 
+brew cask install shiori
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Shiori.app", hidden:true, name:"Shiori"}'
 
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files

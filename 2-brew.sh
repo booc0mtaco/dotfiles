@@ -20,8 +20,8 @@ else
     exit -1
 fi
 
-brew update
-brew upgrade --all
+brew update                # update any existing brew packages (for re-runs)
+brew upgrade --all         # also upgrade any packages
 
 # homebrew enhancements
 brew tap caskroom/cask     # install desktop apps via command line
@@ -74,7 +74,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 brew cask install itsycal	     # system level calendar in a nice little icon
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Itsycal.app", hidden:true, name:"Itsycal"}'
 
-brew cask install shiori
+brew cask install shiori             # tool to pull in and use bookmarks from pinboard
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Shiori.app", hidden:true, name:"Shiori"}'
 
 # Finder enhancements

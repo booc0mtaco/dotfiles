@@ -60,6 +60,7 @@ brew cask install macdown	     # edit markdown files and preview them live
 
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine
+brew cask install licecap	     # GIF image capture tool
 
 # ... and those that should start up by default ...
 brew cask install caffeine	     # keep your computer awake with one click

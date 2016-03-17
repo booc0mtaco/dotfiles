@@ -78,6 +78,8 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 brew cask install shiori             # tool to pull in and use bookmarks from pinboard
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Shiori.app", hidden:true, name:"Shiori"}'
 
+brew cask install mactracker         # tool that lets you see all the details of all macs ever
+
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files
 brew cask install qlstephen	     # Quicklook : text files of different sorts

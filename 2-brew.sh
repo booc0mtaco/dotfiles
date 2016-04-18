@@ -41,6 +41,18 @@ brew install wget		    # retrieve files from the internet
 
 brew install fish		    # alternative CLI shell for the 90s!
 
+brew install diff-so-fancy          # alternative diff viewer. https://github.com/so-fancy/diff-so-fancy
+
+# Set up diff-so-fancy to run with every diff call
+git config --global pager.diff "diff-so-fancy | less --tabs=4 -RFX"
+git config --global pager.show "diff-so-fancy | less --tabs=4 -RFX"
+
+# Recommended coloring updates for diff-so-fancy
+git config --global color.diff-highlight.oldNormal "red bold"
+git config --global color.diff-highlight.oldHighlight "red bold 52"
+git config --global color.diff-highlight.newNormal "green bold"
+git config --global color.diff-highlight.newHighlight "green bold 22"
+
 # Source Control
 brew install git		    # distributed source control tool
 brew install git-flow		    # methodology for managing branches and development

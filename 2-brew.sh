@@ -73,6 +73,7 @@ brew cask install macdown	     # edit markdown files and preview them live
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine
 brew cask install licecap	     # GIF image capture tool
+brew cask install mactracker         # tool that lets you see all the details of all macs ever
 
 # ... and those that should start up by default ...
 brew cask install clipmenu           # Keep track of your clipboard items with a menu bar app
@@ -84,16 +85,14 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 brew cask install spectacle	     # manage keyboard shortcuts to move windows about
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
 
-brew cask install quicksilver	     # old-school launcher and manager for system behaviors
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Quicksilver.app", hidden:true, name:"Quicksilver"}'
-
 brew cask install itsycal	     # system level calendar in a nice little icon
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Itsycal.app", hidden:true, name:"Itsycal"}'
 
 brew cask install shiori             # tool to pull in and use bookmarks from pinboard
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Shiori.app", hidden:true, name:"Shiori"}'
 
-brew cask install mactracker         # tool that lets you see all the details of all macs ever
+brew cask install alfred             # tool similar to quicksilver but so much more
+osascript -e 'tell application "Alfred 3" to make login item at end with properties {path:"~/Applications/Alfred 3.app", hidden:true, name:"Alfred 3"}'
 
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files

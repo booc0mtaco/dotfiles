@@ -127,6 +127,9 @@ brew cask install google-chrome	     # Google browser using Blink
 brew cask install font-fira-code
 brew cask install font-fira-mono
 
+# Fun
+brew cask install openemu	     # Open Emulator
+
 # Set up the font in Safari, so all monospaced text blocks use it
 # Restart Safari.app after setting this
 defaults write com.apple.Safari UserStyleSheetEnabled 1

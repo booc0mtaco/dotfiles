@@ -10,7 +10,7 @@ fi
 
 if [ -e ~/.hasrun_brew ]
 then
-    echo "Installing oh-my-fish sell extension framework . . ."
+    echo "Installing oh-my-fish shell extension framework . . ."
 else
     echo "Level 2 commands have not been run yet!"
     exit -1

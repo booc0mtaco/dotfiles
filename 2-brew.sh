@@ -48,6 +48,11 @@ brew install tig		    # command line tool for viewing commit history
 
 brew install diff-so-fancy          # alternative diff viewer. https://github.com/so-fancy/diff-so-fancy
 
+brew install thefuck                # Fix your last command because you cannot type !
+
+# The fuck requires some configuration. Set up is here
+echo "eval (thefuck --alias | tr '\n' ';')" | cat >> ~/.config/fish/config.fish
+
 # Set up diff-so-fancy to run with every diff call
 git config --global pager.diff "diff-so-fancy | less --tabs=4 -RFX"
 git config --global pager.show "diff-so-fancy | less --tabs=4 -RFX"

@@ -99,6 +99,9 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 brew cask install alfred             # tool similar to quicksilver but so much more
 osascript -e 'tell application "Alfred 3" to make login item at end with properties {path:"~/Applications/Alfred 3.app", hidden:true, name:"Alfred 3"}'
 
+brew cask install lacona             # another quick launcher with support for natural language
+osascript -e 'tell application "Lacona" to make login item at end with properties {path:"/Application/Lacona.app", hidden:true, name:"Lacona"}'
+
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files
 brew cask install qlstephen	     # Quicklook : text files of different sorts

@@ -24,7 +24,6 @@ brew update                # update any existing brew packages (for re-runs)
 brew upgrade --all         # also upgrade any packages
 
 # homebrew enhancements
-brew tap caskroom/cask     # install desktop apps via command line
 brew tap homebrew/versions # install different versions of commandline tools, etc.
 brew tap caskroom/versions # install different versions of apps
 brew tap caskroom/fonts    # install custom fonts via command line

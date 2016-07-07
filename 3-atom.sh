@@ -46,6 +46,7 @@ apm install atom-beautify
 apm install color-picker
 apm install highlight-selected
 apm install minimap
+apm install close-on-left # may replace this with my own package
 
 # Fun (?)
 apm install activate-power-mode

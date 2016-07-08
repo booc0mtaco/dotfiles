@@ -55,6 +55,8 @@ apm install activate-power-mode
 apm install project-manager
 apm install emmet
 apm install editorconfig
+apm install double-tag
+apm install highlight-selected
 
 #
 # copy over settings to ~/.atom

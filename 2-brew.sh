@@ -64,6 +64,7 @@ git config --global color.diff-highlight.newHighlight "green bold 22"
 
 # development tools
 brew install node		    # all-encompassing JavaScript VM
+brew install hyperterm              # Electron-based terminal emulator
 
 #
 # GUI / Desktop App Section

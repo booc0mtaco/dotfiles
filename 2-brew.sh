@@ -150,6 +150,11 @@ open -a safari
 echo "***"
 echo "*** Installed brew packages successfully"
 echo "*** Symlinked commands: apm, atom.sh, macdown, stree"
+echo "*** Remember to set up HyperTerm with Fira Code, and packages:"
+echo "*** hyperterm-close-on-left,"
+echo "*** hyperterm-solarized-dark,"
+echo "*** hyperterm-blink, and"
+echo "*** hyperborder"
 echo "***"
 
 touch ~/.hasrun_brew

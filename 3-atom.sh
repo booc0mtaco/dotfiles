@@ -47,6 +47,7 @@ apm install color-picker
 apm install highlight-selected
 apm install minimap
 apm install close-on-left # may replace this with my own package
+apm install editorconfig
 
 # Fun (?)
 apm install activate-power-mode

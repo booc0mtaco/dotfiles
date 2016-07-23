@@ -80,6 +80,9 @@ brew cask install xquartz	     # open Source compositing engine
 brew cask install licecap	     # GIF image capture tool
 brew cask install mactracker         # tool that lets you see all the details of all macs ever
 
+# Drivers
+brew cask xbox360-controller-driver  # Install the XBox 360 Controller driver for steam games
+
 # ... and those that should start up by default ...
 brew cask install clipmenu           # Keep track of your clipboard items with a menu bar app
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/ClipMenu.app", hidden:true, name:"ClipMenu"}'

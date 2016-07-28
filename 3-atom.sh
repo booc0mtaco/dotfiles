@@ -25,6 +25,11 @@ fi
 # Install atom plugins and themes
 #
 
+# App-level enhancements
+apm install auto-update-packages
+apm install simple-drag-drop-text
+apm install close-on-left
+
 # Themes
 apm install solarized-dark-ui
 apm install solarized-one-dark-syntax
@@ -38,6 +43,7 @@ apm install atom-ternjs
 # Source control
 apm install git-blame
 apm install git-plus
+apm install merge-conflicts
 
 # Stylin' and Profilin'
 apm install color-picker
@@ -46,8 +52,8 @@ apm install atom-beautify
 apm install color-picker
 apm install highlight-selected
 apm install minimap
-apm install close-on-left # may replace this with my own package
 apm install editorconfig
+apm install file-icons	    # show individual icons files for file types
 
 # Fun (?)
 apm install activate-power-mode

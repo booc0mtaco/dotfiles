@@ -42,7 +42,8 @@ brew install fish		    # alternative CLI shell for the 90s!
 
 # Source Control
 brew install git		    # distributed source control tool
-brew install git-flow		    # methodology for managing branches and development
+brew uninstall git-flow		    # remember to remove the now-dead git-flow project
+brew install git-flow-avh	    # methodology for managing branches and development
 brew install tig		    # command line tool for viewing commit history
 
 brew install diff-so-fancy          # alternative diff viewer. https://github.com/so-fancy/diff-so-fancy

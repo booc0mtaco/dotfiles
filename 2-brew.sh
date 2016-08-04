@@ -37,8 +37,11 @@ brew install ack		    # intelligent text search through files
 brew install tmux		    # replacement for screen. sessions for shells
 brew install tree		    # see the contents of a directory structure
 brew install wget		    # retrieve files from the internet
-brew install vim		    # Install the latest version of VIM
 
+brew install vim		    # Install the latest version of VIM
+pip install --upgrade pip setuptools
+
+# Alternative command shells
 brew install fish		    # alternative CLI shell for the 90s!
 
 # Source Control

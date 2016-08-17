@@ -24,6 +24,9 @@ fi
 shopt -s dotglob
 cp config/* ~/
 
+# copy Script Apps (JXA) to /Applications
+cp -R jxa/*.app /Applications
+
 # Once everything is done, drop a little file in the home directory to say so
 touch ~/.hasrun_init
 

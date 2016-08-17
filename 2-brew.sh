@@ -71,6 +71,13 @@ git config --global color.diff-highlight.newHighlight "green bold 22"
 brew install node		    # all-encompassing JavaScript VM
 brew cask install hyperterm         # Electron-based terminal emulator
 
+## and set some NPM values
+npm set init.author.email "booc0mtaco@gmail.com"
+npm set init.author.name "Andrew Holloway"
+npm set init.license "MIT"
+
+brew install hyperterm              # Electron-based terminal emulator
+
 #
 # GUI / Desktop App Section
 #

@@ -143,8 +143,8 @@ defaults -currentHost write com.apple.screensaver moduleName -string "Aerial"
 brew cask install imageoptim	     # Optimize JPEG / PNG images
 
 # Programming Tools
-brew cask install gitup		     # Alternative Git GUI
 brew cask install sourcetree	     # Alternative Git GUI
+brew cask install gitkraken          # Alternative Git GUI
 
 # Browsers
 brew cask install firefox	     # Mozilla browser using Gecko

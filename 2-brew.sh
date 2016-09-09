@@ -84,6 +84,7 @@ npm set init.license "MIT"
 brew cask install atom		     # Text editor built on web technologies
 brew cask install cool-retro-term    # make your screen look/feel like an old CRT
 brew cask install macdown	     # edit markdown files and preview them live
+brew cask install typora             # Edit markdown files without split views
 
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine

@@ -25,6 +25,7 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 # set up robbyrussell as well
 
 # omf install robbyrussell
+# omf install beloglazov
 
 echo "***"
 echo "*** oh-my-fish successfully installed."

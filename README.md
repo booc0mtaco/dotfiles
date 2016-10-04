@@ -49,6 +49,7 @@ Install the oh my fish tools. After installation, it is safe to switch over to f
 I like this one. Using `omf`, you can install it with
 
 	omf install robbyrussell
+	omf install beloglazov
 	
 Once done, update the default shell with `chsh`. The path to fish will be `/usr/local/bin/fish`.
 

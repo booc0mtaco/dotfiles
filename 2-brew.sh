@@ -21,7 +21,7 @@ else
 fi
 
 brew update                # update any existing brew packages (for re-runs)
-brew upgrade --all         # also upgrade any packages
+brew upgrade               # also upgrade any packages
 
 # homebrew enhancements
 brew tap homebrew/versions # install different versions of commandline tools, etc.
@@ -39,7 +39,11 @@ brew install tree		    # see the contents of a directory structure
 brew install wget		    # retrieve files from the internet
 
 brew install vim		    # Install the latest version of VIM
+
+# Python
+brew install python
 pip install --upgrade pip setuptools
+brew linkapps python
 
 # Alternative command shells
 brew install fish		    # alternative CLI shell for the 90s!
@@ -69,7 +73,7 @@ git config --global color.diff-highlight.newHighlight "green bold 22"
 
 # development tools
 brew install node		    # all-encompassing JavaScript VM
-brew cask install hyperterm         # Electron-based terminal emulator
+brew cask install hyper             # Electron-based terminal emulator
 
 ## and set some NPM values
 npm set init.author.email "booc0mtaco@gmail.com"

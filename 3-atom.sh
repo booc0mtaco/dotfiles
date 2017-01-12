@@ -37,7 +37,7 @@ apm install solarized-seti-ui
 apm install atom-solarized-dark-ui
 
 # JavaScript stuff
-apm install jshint
+apm install linter-eslint
 apm install atom-ternjs
 
 # Source control

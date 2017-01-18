@@ -20,6 +20,9 @@ fi
 # Install homebrew ! (http://brew.sh)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# install NVM for node virtual environments
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
 # Copy configuration files into their proper places
 shopt -s dotglob
 cp config/* ~/

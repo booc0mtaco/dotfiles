@@ -72,7 +72,7 @@ git config --global color.diff-highlight.newNormal "green bold"
 git config --global color.diff-highlight.newHighlight "green bold 22"
 
 # development tools
-brew install node		    # all-encompassing JavaScript VM
+# Node installed as a part of NVM now
 brew cask install hyper             # Electron-based terminal emulator
 
 ## and set some NPM values

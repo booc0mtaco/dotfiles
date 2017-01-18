@@ -26,10 +26,11 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 # omf install robbyrussell
 # omf install beloglazov
+# omf install plugin-nvm
 
 echo "***"
 echo "*** oh-my-fish successfully installed."
-echo "*** Review README.md to run post-install commands!"
+echo "*** Review 3-oh-my-fish.sh to run post-install commands!"
 echo "***"
 
 touch ~/.hasrun_omf

@@ -99,8 +99,6 @@ brew cask install mactracker         # tool that lets you see all the details of
 brew cask install xbox360-controller-driver
 
 # ... and those that should start up by default ...
-brew cask install clipmenu           # Keep track of your clipboard items with a menu bar app
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/ClipMenu.app", hidden:true, name:"ClipMenu"}'
 
 brew cask install caffeine	     # keep your computer awake with one click
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Caffeine.app", hidden:true, name:"Caffeine"}'

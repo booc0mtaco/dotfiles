@@ -120,7 +120,7 @@ osascript -e 'tell application "Lacona" to make login item at end with propertie
 
 # Security Tools
 brew cask install blockblock
-open /usr/local/Caskroom/blockblock/0.9.4/BlockBlock_Installer.app
+open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app
 
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files

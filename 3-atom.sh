@@ -38,6 +38,7 @@ apm install atom-solarized-dark-ui
 # JavaScript stuff
 apm install linter-eslint
 apm install atom-ternjs
+apm install linter-eslint             # Now, configure atom to use ESLint
 
 # Source control
 apm install git-blame
@@ -52,7 +53,7 @@ apm install color-picker
 apm install highlight-selected
 apm install minimap
 apm install editorconfig
-apm install file-icons	    # show individual icons files for file types
+apm install file-icons		      # show individual icons files for file types
 
 # Fun (?)
 apm install activate-power-mode

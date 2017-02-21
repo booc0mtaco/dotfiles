@@ -18,12 +18,12 @@ fi
 
 # Install the NPM parts we want to be globally accessible 
 
-npm install -g coffeelint     # Linter for CoffeeScript
-apm install linter-coffeelint # Now, we can install a tool in Atom. . .
+npm install -g coffeelint                # Linter for CoffeeScript
+apm install linter-coffeelint            # Now, we can install a tool in Atom. . .
 
 # Use ESLint : https://github.com/dustinspecker/awesome-eslint
 npm install -g eslint
-apm install linter-eslint     # Now, configure atom to use it
+npm install -g eslint-plugin-cocoascript # Dogfooding
 
 echo "***"
 echo "*** NPM global scripts have been successfully installed."

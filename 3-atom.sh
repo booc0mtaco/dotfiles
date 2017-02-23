@@ -29,6 +29,7 @@ fi
 apm install auto-update-packages
 apm install simple-drag-drop-text
 apm install close-on-left
+apm install tabs-to-spaces
 
 # Themes
 apm install solarized-dark-ui

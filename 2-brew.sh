@@ -95,6 +95,8 @@ brew cask install typora             # Edit markdown files without split views
 brew cask install xquartz	     # open Source compositing engine
 brew cask install licecap	     # GIF image capture tool
 brew cask install mactracker         # tool that lets you see all the details of all macs ever
+brew cask install diskwave           # view your disk usage in a tabular format
+brew cask install disk-inventory-x   # another, but more ugly, way to view your disk usage
 
 # Drivers
 brew cask install xbox360-controller-driver

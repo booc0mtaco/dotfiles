@@ -157,6 +157,8 @@ brew cask install gitkraken          # Alternative Git GUI
 # Browsers
 brew cask install firefox	     # Mozilla browser using Gecko
 brew cask install google-chrome	     # Google browser using Blink
+brew cask install cliqz              # Some security browser thing
+
 
 # Fonts
 brew cask install font-fira-code

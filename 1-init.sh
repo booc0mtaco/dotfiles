@@ -33,6 +33,8 @@ cp -R jxa/*.app /Applications
 # Once everything is done, drop a little file in the home directory to say so
 touch ~/.hasrun_init
 
+. ~/.bash_profile
+
 echo "Initialization completed successfully."
 
 exit 0

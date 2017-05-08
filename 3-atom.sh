@@ -37,7 +37,6 @@ apm install solarized-one-dark-syntax
 apm install atom-solarized-dark-ui
 
 # JavaScript stuff
-apm install linter-eslint
 apm install atom-ternjs
 apm install linter-eslint             # Now, configure atom to use ESLint
 
@@ -60,7 +59,6 @@ apm install file-icons		      # show individual icons files for file types
 apm install activate-power-mode
 
 # Project Management & Structure
-apm install project-manager
 apm install emmet
 apm install editorconfig
 apm install double-tag

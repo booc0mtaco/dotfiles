@@ -102,9 +102,6 @@ brew cask install diskwave           # view your disk usage in a tabular format
 brew cask install disk-inventory-x   # another, but more ugly, way to view your disk usage
 brew cask install the-unarchiver     # UnZIP things from many different formats
 
-# Drivers
-brew cask install xbox360-controller-driver
-
 # ... and those that should start up by default ...
 
 brew cask install caffeine	     # keep your computer awake with one click

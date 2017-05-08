@@ -155,9 +155,9 @@ brew cask install sourcetree	     # Alternative Git GUI
 brew cask install gitkraken          # Alternative Git GUI
 
 # Browsers
-brew cask install firefox	     # Mozilla browser using Gecko
-brew cask install google-chrome	     # Google browser using Blink
-brew cask install cliqz              # Some security browser thing
+brew cask install firefox --force	     # Mozilla browser using Gecko
+brew cask install google-chrome --force	     # Google browser using Blink
+brew cask install cliqz                      # Some security browser thing
 
 
 # Fonts

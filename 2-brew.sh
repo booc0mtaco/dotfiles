@@ -32,7 +32,7 @@ brew tap caskroom/fonts    # install custom fonts via command line
 # CLI Section
 #
 
-# command line / shell tools
+# command line / system / shell tools
 brew install ack		    # intelligent text search through files
 brew install tmux		    # replacement for screen. sessions for shells
 brew install tree		    # see the contents of a directory structure
@@ -40,6 +40,8 @@ brew install wget		    # retrieve files from the internet
 brew install rename		    # allow for batch renaming operations (util-linux)
 
 brew install vim		    # Install the latest version of VIM
+
+brew cask install osxfuse           # System for handling custom filesystems in userland
 
 # Python
 brew install python

@@ -54,6 +54,7 @@ apm install highlight-selected
 apm install minimap
 apm install editorconfig
 apm install file-icons		      # show individual icons files for file types
+apm install line-ending-converter
 
 # Fun (?)
 apm install activate-power-mode

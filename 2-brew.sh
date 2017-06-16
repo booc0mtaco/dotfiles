@@ -125,6 +125,9 @@ osascript -e 'tell application "Alfred 3" to make login item at end with propert
 brew cask install lacona             # another quick launcher with support for natural language
 osascript -e 'tell application "Lacona" to make login item at end with properties {path:"/Application/Lacona.app", hidden:true, name:"Lacona"}'
 
+brew cask install shortcat
+osascript -e 'tell application "Shortcat" to make login item at end with properties {path:"/Application/Shortcat.app", hidden:true, name:"Shortcat"}'
+
 # Security Tools
 brew cask install blockblock
 open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app

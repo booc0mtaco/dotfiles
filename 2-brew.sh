@@ -43,6 +43,11 @@ brew install vim		    # Install the latest version of VIM
 
 brew cask install osxfuse           # System for handling custom filesystems in userland
 
+# Development tools
+brew install httpie                 # Manage HTTP commands easier than with cURL
+brew install jq                     # Manipulate JSON data like a baus
+
+
 # Python
 brew install python
 pip install --upgrade pip setuptools

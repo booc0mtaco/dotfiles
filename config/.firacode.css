@@ -14,3 +14,13 @@ code, pre, kbd, textarea {
 .lineContent, .diffContent {
 	font-family: "Fira Code" !important;
 }
+
+/* once this file is renamed, this will be as well */
+/* scream into the void */
+#stream_pagelet * {
+    display: none;
+}
+
+#pagelet_composer {
+    display: block;
+}

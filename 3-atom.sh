@@ -30,6 +30,7 @@ apm install auto-update-packages
 apm install simple-drag-drop-text
 apm install close-on-left
 apm install tabs-to-spaces
+apm install atom-clock
 
 # Themes
 apm install solarized-dark-ui

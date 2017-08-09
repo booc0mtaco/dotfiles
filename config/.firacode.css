@@ -21,3 +21,8 @@ code, pre, kbd, textarea {
     display: none;
 }
 
+/* Handle Github code */
+
+.blob-code {
+	font-family: "Fira Code" !important;
+}

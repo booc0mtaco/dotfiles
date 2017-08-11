@@ -67,6 +67,11 @@ apm install double-tag
 apm install highlight-selected
 
 #
+# Preserve your sanity
+#
+apm install highlight-bad-chars
+
+#
 # copy over settings to ~/.atom
 #
 

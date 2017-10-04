@@ -26,11 +26,12 @@ fi
 #
 
 # App-level enhancements
-apm install auto-update-packages
 apm install simple-drag-drop-text
 apm install close-on-left
 apm install tabs-to-spaces
 apm install atom-clock
+apm install busy-signal
+apm install intentions
 
 # Themes
 apm install solarized-dark-ui
@@ -40,10 +41,11 @@ apm install atom-solarized-dark-ui
 # JavaScript stuff
 apm install atom-ternjs
 apm install linter-eslint             # Now, configure atom to use ESLint
+apm install autocomplete-modules      # Used to do path searches for ES6 modules
+apm install docblockr                 # create JSDoc-compatible documentation blocks
 
 # Source control
 apm install git-blame
-apm install git-plus
 apm install merge-conflicts
 
 # Stylin' and Profilin'
@@ -56,9 +58,6 @@ apm install minimap
 apm install editorconfig
 apm install file-icons		      # show individual icons files for file types
 apm install line-ending-converter
-
-# Fun (?)
-apm install activate-power-mode
 
 # Project Management & Structure
 apm install emmet

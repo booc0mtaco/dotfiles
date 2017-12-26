@@ -2,13 +2,16 @@
 
 # Set up npm global packages . This depends on node being installed. 
 
-if [ -e ~/.hasrun_npm ]
+FILE=`basename "$0"`
+mkdir -p ~/.dotfiles
+
+if [ -e ~/.hasrun_npm_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
-    echo "NPM packages have already been set up. To re-run, remove ~/.hasrun_npm ."
+    echo "NPM packages have already been set up."
     exit -2
 fi
 
-if [ -e ~/.hasrun_brew ]
+if [ -e ~/.hasrun_brew_$(stat -f "%Sm" -t "%s" 2-brew.sh) ]
 then
     echo "Installing NPM global packages . . ."
 else
@@ -17,9 +20,6 @@ else
 fi 
 
 # Install the NPM parts we want to be globally accessible 
-
-npm install -g coffeelint                # Linter for CoffeeScript
-apm install linter-coffeelint            # Now, we can install a tool in Atom. . .
 
 # Use ESLint : https://github.com/dustinspecker/awesome-eslint
 npm install -g eslint
@@ -30,4 +30,4 @@ echo "*** NPM global scripts have been successfully installed."
 echo "*** Review README.md to fun post-install commands, if necessary!"
 echo "***"
 
-touch ~/.hasrun_npm 
+touch ~/.hasrun_npm_$(stat -f "%Sm" -t "%s" $FILE)

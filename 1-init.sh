@@ -7,14 +7,20 @@
 # - node packages installed via 2-node.sh
 # - etc.
 # The numbering serves as a mnenonic for the order things get run in
-if [ -e ~/.hasrun_init ]
+
+FILE=`basename "$0"`
+mkdir -p ~/.dotfiles
+
+if [ -e ~/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
-    echo "Dotfiles have already been initialized. To re-initialize, remove ~/.hasrun_init ."
+    echo "Dotfiles have already been initialized."
     exit -2
 else
     echo "***"
     echo "***Initializing Setup . . ."
     echo "***"
+    
+    # clean up old files if we're running this again
 fi
 
 # Install homebrew ! (http://brew.sh)
@@ -31,7 +37,7 @@ cp config/* ~/
 cp -R jxa/*.app /Applications
 
 # Once everything is done, drop a little file in the home directory to say so
-touch ~/.hasrun_init
+touch ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE)
 
 . ~/.bash_profile
 

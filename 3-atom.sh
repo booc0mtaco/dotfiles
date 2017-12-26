@@ -5,13 +5,16 @@
 # - Settings include things from the ~/.atom directory
 # - Plugins/themes include packages to be registered via `apm`
 
-if [ -e ~/.hasrun_atom ]
+FILE=`basename "$0"`
+mkdir -p ~/.dotfiles
+
+if [ -e ~/.dotfiles/.hasrun_atom_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
-    echo "Atom setup has already run. To re-run, remove ~/.hasrun_atom ."
+    echo "Atom setup has already run."
     exit -2
 fi
 
-if [ -e ~/.hasrun_brew ]
+if [ -e ~/.dotfiles/.hasrun_brew_$(stat -f "%Sm" -t "%s" 2-brew.sh) ]
 then
     echo "Begin atom editor setup . . ."
 else
@@ -83,6 +86,6 @@ echo "***"
 echo "*** Atom plugins, themes, and settings have been applied."
 echo "***"
 
-touch ~/.hasrun_atom
+touch ~/.dotfiles/.hasrun_atom_$(stat -f "%Sm" -t "%s" $FILE)
 
 exit 0

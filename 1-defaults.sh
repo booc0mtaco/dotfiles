@@ -3,9 +3,12 @@
 # Taken from (https://github.com/mathiasbynens/dotfiles/blob/master/.osx)
 # set up some default values to make the computer behave in a nice way.
 
-if [ -e ~/.hasrun_defaults ]
+FILE=`basename "$0"`
+mkdir -p ~/.dotfiles
+
+if [ -e ~/.dotfiles/.hasrun_defaults_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
-    echo "Defaults setup has already run. To re-run, remove ~/.hasrun_defaults ."
+    echo "Defaults setup has already run."
     exit -2
 else
     echo "Begin defaults setup . . ."
@@ -119,7 +122,7 @@ echo "***"
 echo "*** Done. Note that some of these changes require a logout/restart to take effect."
 echo "***"
 
-touch ~/.hasrun_defaults
+touch ~/.dotfiles/.hasrun_defaults_$(stat -f "%Sm" -t "%s" $FILE)
 
 sleep 3
 

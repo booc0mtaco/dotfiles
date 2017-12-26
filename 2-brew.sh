@@ -4,9 +4,12 @@
 # It assumes the init script has already been run, which installs system-wide dependencies and
 # such. Checks for .hasrun_init in home directory.
 
-if [ -e ~/.hasrun_brew ]
+FILE=`basename "$0"`
+mkdir -p ~/.dotfiles
+
+if [ -e ~/.dotfiles/.hasrun_brew_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
-    echo "Homebrew setup has already run. To re-run, remove ~/.hasrun_brew ."
+    echo "Homebrew setup has already run."
     exit -2
 fi
 
@@ -165,18 +168,10 @@ brew cask install imageoptim	     # Optimize JPEG / PNG images
 brew cask install sourcetree	     # Alternative Git GUI
 brew cask install gitkraken          # Alternative Git GUI
 
-# Browsers
-brew cask install firefox --force	     # Mozilla browser using Gecko
-brew cask install google-chrome --force	     # Google browser using Blink
-brew cask install cliqz                      # Some security browser thing
-
-
 # Fonts
 brew cask install font-fira-code
 brew cask install font-fira-mono
 
-# Fun
-brew cask install openemu	     # Open Emulator
 
 # Set up the font in Safari, so all monospaced text blocks use it
 # Restart Safari.app after setting this
@@ -197,6 +192,6 @@ echo "*** hyperterm-blink, and"
 echo "*** hyperborder"
 echo "***"
 
-touch ~/.hasrun_brew
+touch ~/.dotfiles/.hasrun_brew_$(stat -f "%Sm" -t "%s" $FILE)
 
 exit 0

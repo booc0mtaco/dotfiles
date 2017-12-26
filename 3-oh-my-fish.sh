@@ -2,13 +2,16 @@
 
 # Set up oh-my-fish . This depends on fish being installed. 
 
-if [ -e ~/.hasrun_omf ]
+FILE=`basename "$0"`
+mkdir -p ~/.dotfiles
+
+if [ -e ~/.hasrun_omf_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
-    echo "oh-my-fish has already been set up. To re-run, remove ~/.hasrun_omf ."
+    echo "oh-my-fish has already been set up."
     exit -2
 fi
 
-if [ -e ~/.hasrun_brew ]
+if [ -e ~/.hasrun_brew_$(stat -f "%Sm" -t "%s" 2-brew.sh) ]
 then
     echo "Installing oh-my-fish shell extension framework . . ."
 else
@@ -33,4 +36,4 @@ echo "*** oh-my-fish successfully installed."
 echo "*** Review 3-oh-my-fish.sh to run post-install commands!"
 echo "***"
 
-touch ~/.hasrun_omf
+touch ~/.hasrun_omf_$(stat -f "%Sm" -t "%s" $FILE)

@@ -13,7 +13,7 @@ then
     exit -2
 fi
 
-if [ -e ~/.hasrun_init ]
+if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" 1-init.sh) ]
 then
     echo "Installing brew scripts . . ."
 else
@@ -53,8 +53,6 @@ brew install jq                     # Manipulate JSON data like a baus
 
 # Python
 brew install python
-pip install --upgrade pip setuptools
-brew linkapps python
 
 # Alternative command shells
 brew install fish		    # alternative CLI shell for the 90s!

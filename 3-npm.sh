@@ -5,13 +5,13 @@
 FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
 
-if [ -e ~/.hasrun_npm_$(stat -f "%Sm" -t "%s" $FILE) ]
+if [ -e ~/.dotfiles/.hasrun_npm_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
     echo "NPM packages have already been set up."
     exit -2
 fi
 
-if [ -e ~/.hasrun_brew_$(stat -f "%Sm" -t "%s" 2-brew.sh) ]
+if [ -e ~/.dotfiles/.hasrun_brew_$(stat -f "%Sm" -t "%s" 2-brew.sh) ]
 then
     echo "Installing NPM global packages . . ."
 else
@@ -30,4 +30,4 @@ echo "*** NPM global scripts have been successfully installed."
 echo "*** Review README.md to fun post-install commands, if necessary!"
 echo "***"
 
-touch ~/.hasrun_npm_$(stat -f "%Sm" -t "%s" $FILE)
+touch ~/.dotfiles/.hasrun_npm_$(stat -f "%Sm" -t "%s" $FILE)

@@ -11,7 +11,7 @@
 FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
 
-if [ -e ~/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
+if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
     echo "Dotfiles have already been initialized."
     exit -2

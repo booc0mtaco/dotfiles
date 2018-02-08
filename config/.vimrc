@@ -24,4 +24,4 @@ set ruler
 set undolevels=1000
 set backspace=indent,eol,start
  
- 
+set mouse=a 

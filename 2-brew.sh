@@ -153,6 +153,9 @@ brew cask install betterzipql        # Quicklook : show contents of zip file bef
 # Other system enhancements
 brew cask install colorpicker-skalacolor
 
+# Command-line driven browser
+brew cask install next
+
 # Screensavers
 brew cask install aerial             # AppleTV screensaver for desktop
 

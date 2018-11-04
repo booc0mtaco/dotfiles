@@ -23,6 +23,6 @@ code, pre, kbd, textarea {
 
 /* Handle Github code */
 
-.blob-code {
-	font-family: "Fira Code" !important;
+.blob-code-inner {
+	font-family: "Fira Code", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }

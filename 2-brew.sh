@@ -27,8 +27,6 @@ brew update                # update any existing brew packages (for re-runs)
 brew upgrade               # also upgrade any packages
 
 # homebrew enhancements
-brew tap homebrew/versions # install different versions of commandline tools, etc.
-brew tap caskroom/versions # install different versions of apps
 brew tap caskroom/fonts    # install custom fonts via command line
 
 #
@@ -118,26 +116,21 @@ brew cask install caffeine	     # keep your computer awake with one click
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Caffeine.app", hidden:true, name:"Caffeine"}'
 
 brew cask install spectacle	     # manage keyboard shortcuts to move windows about
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Spectacle.app", hidden:true, name:"Spectacle"}'
 
 brew cask install itsycal	     # system level calendar in a nice little icon
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Itsycal.app", hidden:true, name:"Itsycal"}'
 
 brew cask install shiori             # tool to pull in and use bookmarks from pinboard
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Shiori.app", hidden:true, name:"Shiori"}'
 
 brew cask install alfred             # tool similar to quicksilver but so much more
-osascript -e 'tell application "Alfred 3" to make login item at end with properties {path:"~/Applications/Alfred 3.app", hidden:true, name:"Alfred 3"}'
 
 brew cask install lacona             # another quick launcher with support for natural language
 osascript -e 'tell application "Lacona" to make login item at end with properties {path:"/Application/Lacona.app", hidden:true, name:"Lacona"}'
 
 brew cask install shortcat
-osascript -e 'tell application "Shortcat" to make login item at end with properties {path:"/Application/Shortcat.app", hidden:true, name:"Shortcat"}'
 
-# Security Tools
-brew cask install blockblock
-open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app
+# Security Tools - Disabling for now
+#brew cask install blockblock
+#open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app
 
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files

@@ -109,6 +109,7 @@ brew cask install disk-inventory-x   # another, but more ugly, way to view your 
 brew cask install the-unarchiver     # UnZIP things from many different formats
 brew cask install etrecheck          # Check your computer out, and run some diagnostics
 brew cask install flycut             # Clipboard manager (in lieu of Alfred's built-in stuff)
+brew cask install iina		     # Alternative video player 
 
 # ... and those that should start up by default ...
 

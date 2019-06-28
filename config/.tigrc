@@ -1,0 +1,23 @@
+# Documentation for these settings
+# https://github.com/jonas/tig/blob/master/tigrc
+
+# Main View Settings - relative dates and user names, with visual graph
+set main-view =  line-number:no,interval=5 id:no date:relative author:email-user commit-title:yes,graph=v2,overflow=70
+
+# Diff View Setting - show line numbers
+set diff-view = line-number:yes,interval=1 text:yes,commit-title-overflow=no
+
+# Blame view - show linenumbers and dates like in the main view
+set blame-view = id:yes,color file-name:auto author:email-user date:relative line-number:yes,interval=1 text
+set blob-view = line-number:yes,interval=1 text
+
+# Use graphics for the branching display
+set line-graphics = utf-8
+
+# use automatic splitting algorithm
+set vertical-split = auto
+
+# Mouse setup
+set mouse = yes
+set mouse-scroll = 3
+set mouse-wheel-cursor = yes

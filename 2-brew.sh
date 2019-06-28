@@ -148,6 +148,7 @@ brew cask install betterzipql        # Quicklook : show contents of zip file bef
 
 # Other system enhancements
 brew cask install colorpicker-skalacolor
+brew cask install bitbar
 
 # Command-line driven browser
 brew cask install next

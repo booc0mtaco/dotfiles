@@ -10,7 +10,7 @@
 
 FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
-mkdir -p ~/.config/vim
+mkdir -p ~/.cache/vim
 
 if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
 then

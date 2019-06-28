@@ -84,7 +84,6 @@ brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
 
 # development tools
 # Node installed as a part of NVM now
-brew cask install hyper             # Electron-based terminal emulator
 
 ## and set some NPM values
 npm set init.author.email "booc0mtaco@gmail.com"
@@ -98,12 +97,11 @@ npm set init.license "MIT"
 # Editors
 brew cask install visual-studio-code # Text editor built on web technologies
 brew cask install cool-retro-term    # make your screen look/feel like an old CRT
-brew cask install macdown	     # edit markdown files and preview them live
 brew cask install typora             # Edit markdown files without split views
 
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine
-brew cask install licecap	     # GIF image capture tool
+brew cask install giphy              # GIF image capture tool
 brew cask install mactracker         # tool that lets you see all the details of all macs ever
 brew cask install diskwave           # view your disk usage in a tabular format
 brew cask install disk-inventory-x   # another, but more ugly, way to view your disk usage
@@ -183,12 +181,7 @@ open -a safari
 
 echo "***"
 echo "*** Installed brew packages successfully"
-echo "*** Symlinked commands: apm, atom.sh, macdown, stree"
-echo "*** Remember to set up HyperTerm with Fira Code, and packages:"
-echo "*** hyperterm-close-on-left,"
-echo "*** hyperterm-solarized-dark,"
-echo "*** hyperterm-blink, and"
-echo "*** hyperborder"
+echo "*** Symlinked commands: stree"
 echo "***"
 
 touch ~/.dotfiles/.hasrun_brew_$(stat -f "%Sm" -t "%s" $FILE)

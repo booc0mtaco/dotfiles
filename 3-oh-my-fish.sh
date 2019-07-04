@@ -30,6 +30,7 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 # omf install robbyrussell
 # omf install beloglazov
 # omf install plugin-nvm
+# omf install bass
 
 echo "***"
 echo "*** oh-my-fish successfully installed."

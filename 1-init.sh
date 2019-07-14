@@ -32,7 +32,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 
 # Copy configuration files into their proper places
 shopt -s dotglob
-cp config/* ~/
 
 # copy Script Apps (JXA) to /Applications
 cp -R jxa/*.app /Applications

@@ -4,6 +4,7 @@
 # It assumes the init script has already been run, which installs system-wide dependencies and
 # such. Checks for .hasrun_init in home directory.
 
+CHECKOUT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
 
@@ -37,11 +38,16 @@ brew tap caskroom/fonts    # install custom fonts via command line
 brew install ack		    # intelligent text search through files
 brew install bat		    # better than less (cat with colors!)
 brew install tmux		    # replacement for screen. sessions for shells
+
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
+
 brew install tree		    # see the contents of a directory structure
 brew install wget		    # retrieve files from the internet
 brew install rename		    # allow for batch renaming operations (util-linux)
 
 brew install vim		    # Install the latest version of VIM
+
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
 
 brew cask install osxfuse           # System for handling custom filesystems in userland
 
@@ -49,34 +55,32 @@ brew cask install osxfuse           # System for handling custom filesystems in 
 brew install httpie                 # Manage HTTP commands easier than with cURL
 brew install jq                     # Manipulate JSON data like a baus
 
-
 # Python
 brew install python
 
 # Alternative command shells
 brew install fish		    # alternative CLI shell for the 90s!
 
+# TODO: setup for fish config here
+$CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
+
 # Source Control
 brew install git		    # distributed source control tool
 brew install git-flow-avh	    # methodology for managing branches and development
 brew install tig		    # command line tool for viewing commit history
 
-brew install diff-so-fancy          # alternative diff viewer. https://github.com/so-fancy/diff-so-fancy
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
 
 brew install thefuck                # Fix your last command because you cannot type !
 
 # The fuck requires some configuration. Set up is here
 echo "eval (thefuck --alias | tr '\n' ';')" | cat >> ~/.config/fish/config.fish
 
-# Set up diff-so-fancy to run with every diff call
-git config --global pager.diff "diff-so-fancy | less --tabs=4 -RFX"
-git config --global pager.show "diff-so-fancy | less --tabs=4 -RFX"
+brew install diff-so-fancy          # alternative diff viewer. https://github.com/so-fancy/diff-so-fancy
 
-# Recommended coloring updates for diff-so-fancy
-git config --global color.diff-highlight.oldNormal "red bold"
-git config --global color.diff-highlight.oldHighlight "red bold 52"
-git config --global color.diff-highlight.newNormal "green bold"
-git config --global color.diff-highlight.newHighlight "green bold 22"
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
 
 # Shell enhancements
 brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
@@ -86,6 +90,7 @@ brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
 # Node installed as a part of NVM now
 
 ## and set some NPM values
+
 npm set init.author.email "booc0mtaco@gmail.com"
 npm set init.author.name "Andrew Holloway"
 npm set init.license "MIT"
@@ -98,6 +103,9 @@ npm set init.license "MIT"
 brew cask install visual-studio-code # Text editor built on web technologies
 brew cask install cool-retro-term    # make your screen look/feel like an old CRT
 brew cask install typora             # Edit markdown files without split views
+brew cask install iterm2             # Terminal emulator with advanced features
+
+$CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
 
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine

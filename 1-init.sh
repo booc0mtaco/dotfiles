@@ -8,6 +8,7 @@
 # - etc.
 # The numbering serves as a mnenonic for the order things get run in
 
+CHECKOUT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
 mkdir -p ~/.cache/vim
@@ -30,8 +31,9 @@ fi
 # install NVM for node virtual environments
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
-# Copy configuration files into their proper places
 shopt -s dotglob
+
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .firacode.css
 
 # copy Script Apps (JXA) to /Applications
 cp -R jxa/*.app /Applications

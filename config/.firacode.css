@@ -9,10 +9,6 @@ code, pre, kbd, textarea {
 
 /* JIRA */
 
-.activity-comment {
-	font-family: "Fira Code" !important;
-}
-
 /* Crucible */
 .lineContent, .diffContent {
 	font-family: "Fira Code" !important;
@@ -27,5 +23,19 @@ code, pre, kbd, textarea {
 /* Handle Github code */
 
 .blob-code-inner {
-	font-family: "Fira Code", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+        /* Disable Fira Code due to CSP changes in safari */
+	font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
+
+.commit-message code {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
+
+text-expander textarea {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
+
+.comment-body pre {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
+

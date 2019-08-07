@@ -2,7 +2,7 @@
 # https://github.com/jonas/tig/blob/master/tigrc
 
 # Main View Settings - relative dates and user names, with visual graph
-set main-view =  line-number:no,interval=5 id:no date:relative author:email-user commit-title:yes,graph=v2,overflow=70
+set main-view =  line-number:no,interval=5 id:no date:relative author:full commit-title:yes,graph=v2,overflow=70
 
 # Diff View Setting - show line numbers
 set diff-view = line-number:yes,interval=1 text:yes,commit-title-overflow=no

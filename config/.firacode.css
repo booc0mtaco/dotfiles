@@ -50,7 +50,13 @@
     #jira .issue-body-content .module>.mod-header>h3,
     #jira .issue-body-content .module>.mod-header>h4,
     #jira .issue-body-content .module>.mod-header>h5,
-    #jira .issue-body-content .module>.mod-header>h6 {
+    #jira .issue-body-content .module>.mod-header>h6, 
+    #jira h1, {
+    #jira h2, {
+    #jira h3, {
+    #jira h4, {
+    #jira h5, {
+    #jira h6, {
         color: #fafafa !important;
     }
 

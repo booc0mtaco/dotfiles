@@ -43,6 +43,7 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
 
 brew install tree		    # see the contents of a directory structure
 brew install cloc                   # Tool that does source code counts and analytics
+                                    # CPAN install any modules missing: `cpan Moo::Role`
 brew install wget		    # retrieve files from the internet
 brew install rename		    # allow for batch renaming operations (util-linux)
 

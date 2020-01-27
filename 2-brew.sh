@@ -36,6 +36,7 @@ brew tap caskroom/fonts    # install custom fonts via command line
 
 # command line / system / shell tools
 brew install ack		    # intelligent text search through files
+brew install the_silver_searcher    # fork of ack that is more performant (command: `ag`)
 brew install bat		    # better than less (cat with colors!)
 brew install tmux		    # replacement for screen. sessions for shells
 

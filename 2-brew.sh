@@ -179,7 +179,7 @@ brew cask install gitkraken          # Alternative Git GUI
 # Fonts
 brew cask install font-fira-code
 brew cask install font-fira-mono
-
+brew cask install font-jetbrains-mono
 
 # Set up the font in Safari, so all monospaced text blocks use it
 # Restart Safari.app after setting this

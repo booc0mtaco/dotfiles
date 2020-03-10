@@ -140,6 +140,9 @@ osascript -e 'tell application "Lacona" to make login item at end with propertie
 
 brew cask install shortcat
 
+brew cask install rocket             # tool to make using emoji much easier (slack-like)
+osascript -e 'tell application "Rocket" to make login item at end with properties {path:"/Application/Rocket.app", hidden:true, name:"Rocket"}'
+
 # Security Tools - Disabling for now
 #brew cask install blockblock
 #open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app

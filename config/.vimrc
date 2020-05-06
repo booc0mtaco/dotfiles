@@ -11,7 +11,8 @@ set visualbell
 set smartcase
 set ignorecase
 set incsearch
- 
+set wrapscan
+
 set autoindent
 set cindent
 set expandtab

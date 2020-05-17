@@ -30,6 +30,8 @@ brew upgrade               # also upgrade any packages
 # homebrew enhancements
 brew tap caskroom/fonts    # install custom fonts via command line
 
+brew cask uninstall giphy  # make sure to uninstall giphy on any subsequent runs
+
 #
 # CLI Section
 #

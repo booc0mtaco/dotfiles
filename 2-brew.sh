@@ -159,7 +159,6 @@ brew cask install quicklook-json     # Quicklook : provide structure to JSON fil
 brew cask install qlprettypatch      # Quicklook : show patch files with diff information
 brew cask install quicklook-csv      # Quicklook : show CSV information in context
 brew cask install qlimagesize        # Quicklook : show image metrics and info in context
-brew cask install betterzipql        # Quicklook : show contents of zip file before extracting
 
 # Other system enhancements
 brew cask install colorpicker-skalacolor

@@ -1,3 +1,3 @@
 function dir
-	ls -laGh
+	exa --long --git
 end

@@ -65,6 +65,16 @@ brew install jq                     # Manipulate JSON data like a baus
 # Python
 brew install python
 
+# install bashtop (python version) : https://github.com/aristocratos/bpytop
+brew install python3 git
+python3 -m pip install psutil
+brew install osx-cpu-temp
+git clone https://github.com/aristocratos/bpytop.git $CHECKOUT_DIR/bpytop
+cd bpytop
+sudo make install
+cd -
+
+
 # Alternative command shells
 brew install fish		    # alternative CLI shell for the 90s!
 

@@ -37,7 +37,7 @@ brew cask uninstall giphy  # make sure to uninstall giphy on any subsequent runs
 #
 
 # command line / system / shell tools
-brew install ack		    # intelligent text search through files
+#brew install ack		    # intelligent text search through files
 brew install the_silver_searcher    # fork of ack that is more performant (command: `ag`)
 brew install bat		    # better than less (cat with colors!)
 brew install tmux		    # replacement for screen. sessions for shells
@@ -72,6 +72,7 @@ brew install fish		    # alternative CLI shell for the 90s!
 $CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh ack.fish
 
 # Source Control
 brew install git		    # distributed source control tool

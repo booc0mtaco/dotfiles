@@ -65,6 +65,9 @@ brew install jq                     # Manipulate JSON data like a baus
 # Python
 brew install python
 
+# Alternative command shells
+brew install fish		    # alternative CLI shell for the 90s!
+
 # install bashtop (python version) : https://github.com/aristocratos/bpytop
 brew install python3 git
 python3 -m pip install psutil
@@ -74,15 +77,12 @@ cd bpytop
 sudo make install
 cd -
 
-
-# Alternative command shells
-brew install fish		    # alternative CLI shell for the 90s!
-
 # TODO: setup for fish config here
 $CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh ack.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh top.fish
 
 # Source Control
 brew install git		    # distributed source control tool

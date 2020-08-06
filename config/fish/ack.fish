@@ -1,3 +1,3 @@
 function ack
-    ag
+    ag $argv
 end

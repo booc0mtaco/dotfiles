@@ -53,6 +53,3 @@ I like this one. Using `omf`, you can install it with
 	
 Once done, update the default shell with `chsh`. The path to fish will be `/usr/local/bin/fish`.
 
-## Future developments
-
-I plan to add any needed [npm](https://www.npmjs.com) tools to a script `3-npm.js`, which may include things like [gulp](http://gulpjs.com), [grunt](http://gruntjs.com), etc. 

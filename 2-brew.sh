@@ -96,7 +96,7 @@ brew install thefuck                # Fix your last command because you cannot t
 # The fuck requires some configuration. Set up is here
 echo "eval (thefuck --alias | tr '\n' ';')" | cat >> ~/.config/fish/config.fish
 
-brew install diff-so-fancy          # alternative diff viewer. https://github.com/so-fancy/diff-so-fancy
+brew install git-delta              # alternative diff viewer, v2. https://github.com/dandavison/delta
 
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
 

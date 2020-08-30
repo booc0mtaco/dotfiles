@@ -132,7 +132,9 @@ brew cask install diskwave           # view your disk usage in a tabular format
 brew cask install disk-inventory-x   # another, but more ugly, way to view your disk usage
 brew cask install the-unarchiver     # UnZIP things from many different formats
 brew cask install etrecheck          # Check your computer out, and run some diagnostics
-brew cask install flycut             # Clipboard manager (in lieu of Alfred's built-in stuff)
+brew cask install maccy              # Clipboard manager (in lieu of Alfred's built-in stuff)
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Maccy.app", hidden:true, name:"Maccy"}'
+
 brew cask install iina		     # Alternative video player 
 brew cask install couleurs           # Color picker desktop app
 

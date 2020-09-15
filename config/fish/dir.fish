@@ -1,3 +1,3 @@
 function dir
-	exa --long --git
+	exa --long --git --all
 end

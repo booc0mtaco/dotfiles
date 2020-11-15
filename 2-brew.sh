@@ -28,16 +28,16 @@ brew update                # update any existing brew packages (for re-runs)
 brew upgrade               # also upgrade any packages
 
 # homebrew enhancements
-brew tap caskroom/fonts    # install custom fonts via command line
+brew tap homebrew/cask-fonts # install custom fonts via command line
 
-brew cask uninstall giphy  # make sure to uninstall giphy on any subsequent runs
+# brew cask uninstall giphy  # make sure to uninstall giphy on any subsequent runs
 
 #
 # CLI Section
 #
 
 # command line / system / shell tools
-#brew install ack		    # intelligent text search through files
+# brew install ack		    # intelligent text search through files
 brew install the_silver_searcher    # fork of ack that is more performant (command: `ag`)
 brew install bat		    # better than less (cat with colors!)
 brew install tmux		    # replacement for screen. sessions for shells
@@ -56,7 +56,7 @@ brew install vim		    # Install the latest version of VIM
 
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
 
-brew cask install osxfuse           # System for handling custom filesystems in userland
+# brew cask install osxfuse           # System for handling custom filesystems in userland
 
 # Development tools
 brew install httpie                 # Manage HTTP commands easier than with cURL
@@ -86,7 +86,7 @@ $CHECKOUT_DIR/utils/apply_fish_functions.sh top.fish
 
 # Source Control
 brew install git		    # distributed source control tool
-brew install git-flow-avh	    # methodology for managing branches and development
+# brew install git-flow-avh	    # methodology for managing branches and development
 brew install tig		    # command line tool for viewing commit history
 
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
@@ -105,7 +105,7 @@ brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
 /usr/local/opt/fzf/install          # Set up right away
 
 # development tools
-# Node installed as a part of NVM now
+brew install node
 
 ## and set some NPM values
 
@@ -127,11 +127,10 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
 
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine
-brew cask install mactracker         # tool that lets you see all the details of all macs ever
-brew cask install diskwave           # view your disk usage in a tabular format
-brew cask install disk-inventory-x   # another, but more ugly, way to view your disk usage
+# brew cask install mactracker         # tool that lets you see all the details of all macs ever
+# brew cask install diskwave           # view your disk usage in a tabular format
+# brew cask install disk-inventory-x   # another, but more ugly, way to view your disk usage
 brew cask install the-unarchiver     # UnZIP things from many different formats
-brew cask install etrecheck          # Check your computer out, and run some diagnostics
 brew cask install maccy              # Clipboard manager (in lieu of Alfred's built-in stuff)
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Maccy.app", hidden:true, name:"Maccy"}'
 
@@ -143,25 +142,25 @@ brew cask install couleurs           # Color picker desktop app
 brew cask install caffeine	     # keep your computer awake with one click
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"~/Applications/Caffeine.app", hidden:true, name:"Caffeine"}'
 
-brew cask install spectacle	     # manage keyboard shortcuts to move windows about
+# brew cask install spectacle	     # manage keyboard shortcuts to move windows about
 
 brew cask install itsycal	     # system level calendar in a nice little icon
 
-brew cask install shiori             # tool to pull in and use bookmarks from pinboard
+# brew cask install shiori             # tool to pull in and use bookmarks from pinboard
 
 brew cask install alfred             # tool similar to quicksilver but so much more
 
-brew cask install lacona             # another quick launcher with support for natural language
-osascript -e 'tell application "Lacona" to make login item at end with properties {path:"/Application/Lacona.app", hidden:true, name:"Lacona"}'
+# brew cask install lacona             # another quick launcher with support for natural language
+# osascript -e 'tell application "Lacona" to make login item at end with properties {path:"/Application/Lacona.app", hidden:true, name:"Lacona"}'
 
-brew cask install shortcat
+# brew cask install shortcat
 
 brew cask install rocket             # tool to make using emoji much easier (slack-like)
 osascript -e 'tell application "Rocket" to make login item at end with properties {path:"/Application/Rocket.app", hidden:true, name:"Rocket"}'
 
 # Security Tools - Disabling for now
-#brew cask install blockblock
-#open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app
+# brew cask install blockblock
+# open /usr/local/Caskroom/blockblock/0.9.6/BlockBlock_Installer.app
 
 # Finder enhancements
 brew cask install qlmarkdown	     # QuickLook : markdown files
@@ -174,25 +173,25 @@ brew cask install quicklook-csv      # Quicklook : show CSV information in conte
 brew cask install qlimagesize        # Quicklook : show image metrics and info in context
 
 # Other system enhancements
-brew cask install colorpicker-skalacolor
+# brew cask install colorpicker-skalacolor
 brew cask install bitbar
 
 # Command-line driven browser
-brew cask install next
+# brew cask install next
 
 # Screensavers
-brew cask install aerial             # AppleTV screensaver for desktop
+# brew cask install aerial             # AppleTV screensaver for desktop
 
 # And set up the screensaver . . .
-defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen Savers/Aerial.saver"
-defaults -currentHost write com.apple.screensaver moduleName -string "Aerial"
+# defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen Savers/Aerial.saver"
+# defaults -currentHost write com.apple.screensaver moduleName -string "Aerial"
 
 # Image Tools
-brew cask install imageoptim	     # Optimize JPEG / PNG images
+# brew cask install imageoptim	     # Optimize JPEG / PNG images
 
 # Programming Tools
-brew cask install sourcetree	     # Alternative Git GUI
-brew cask install gitkraken          # Alternative Git GUI
+# brew cask install sourcetree	     # Alternative Git GUI
+# brew cask install gitkraken          # Alternative Git GUI
 
 # Fonts
 brew cask install font-fira-code

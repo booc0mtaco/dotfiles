@@ -26,7 +26,7 @@ else
 fi
 
 # Install homebrew ! (http://brew.sh)
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # install NVM for node virtual environments
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash

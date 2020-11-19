@@ -172,6 +172,15 @@ brew cask install qlprettypatch      # Quicklook : show patch files with diff in
 brew cask install quicklook-csv      # Quicklook : show CSV information in context
 brew cask install qlimagesize        # Quicklook : show image metrics and info in context
 
+# For Catalina+, "trust" these QuickLook Extensions
+echo "Setting up QuickLook Extensions. . ."
+xattr -cr ~/Library/QuickLook/*.qlgenerator
+qlmanage -r
+qlmanage -r cache
+
+echo "Restarting Finder. . ."
+killall "Finder" &> /dev/null
+
 # Other system enhancements
 # brew cask install colorpicker-skalacolor
 brew cask install bitbar

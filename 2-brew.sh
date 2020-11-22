@@ -136,6 +136,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 
 brew cask install iina		     # Alternative video player 
 brew cask install couleurs           # Color picker desktop app
+brew cask install alt-tab            # Show window previews when tabbing between windows
 
 # ... and those that should start up by default ...
 

@@ -33,8 +33,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 
 shopt -s dotglob
 
-$CHECKOUT_DIR/utils/apply_dotfiles.sh .firacode.css
-
 # copy Script Apps (JXA) to /Applications
 cp -R jxa/*.app /Applications
 

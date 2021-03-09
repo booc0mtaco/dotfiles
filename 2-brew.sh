@@ -199,10 +199,6 @@ brew cask install bitbar
 # Image Tools
 # brew cask install imageoptim	     # Optimize JPEG / PNG images
 
-# Programming Tools
-# brew cask install sourcetree	     # Alternative Git GUI
-# brew cask install gitkraken          # Alternative Git GUI
-
 # Fonts
 brew cask install font-fira-code
 brew cask install font-fira-mono

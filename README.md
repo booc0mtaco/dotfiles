@@ -35,21 +35,6 @@ This will install tools that don't have any package managers, etc. Right now, it
 This will install many useful tools and resources that are managed via homebrew, and it's caskrooms. Requires homebrew being installed (you *did* read the instructions above, right?).
 
 - for a full list of installed applications, run `brew cask list`
-
-### `3-atom.sh`
-
-Set up the atom editor with plugins and settings. Set up usage options by copying the apprpriate settings into place.
-
-### `3-oh-my-fish.sh`
-
-Install the oh my fish tools. After installation, it is safe to switch over to fish shell! But, a few things to install remain:
-
-#### Install robbyrussell shell prompt
-
-I like this one. Using `omf`, you can install it with
-
-	omf install robbyrussell
-	omf install beloglazov
 	
 Once done, update the default shell with `chsh`. The path to fish will be `/usr/local/bin/fish`.
 

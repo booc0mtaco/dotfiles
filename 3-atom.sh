@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script should be used to set up the atom editor (atom.io).
 # Installed here are plugins, themes, and other settings related to atom:

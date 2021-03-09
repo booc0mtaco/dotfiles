@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set up oh-my-fish . This depends on fish being installed. 
 

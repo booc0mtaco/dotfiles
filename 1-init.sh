@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script installs the tools and files necessary to bootstrap the rest of the system
 # things like homebrew and such get installed here. Everything that can be wrapped will 

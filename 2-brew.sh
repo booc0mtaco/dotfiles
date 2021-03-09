@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This file is responsible for setting up the tools and resources via home brew (http://brew.sh)
 # It assumes the init script has already been run, which installs system-wide dependencies and

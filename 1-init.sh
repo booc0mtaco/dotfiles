@@ -4,8 +4,6 @@
 # things like homebrew and such get installed here. Everything that can be wrapped will 
 # be wrapped, and installed in a shell script named after the wrapper:
 # - all brew installations happen in 2-brew.sh
-# - node packages installed via 2-node.sh
-# - etc.
 # The numbering serves as a mnenonic for the order things get run in
 
 CHECKOUT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"

@@ -18,3 +18,6 @@
 	name = Andrew Holloway
 [pull]
 	rebase = false
+
+[diff]
+	compactionHeuristic = true

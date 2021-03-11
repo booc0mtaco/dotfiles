@@ -14,6 +14,16 @@ else
     echo "Begin defaults setup . . ."
 fi
 
+if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" 1-init.sh) ]
+then
+    echo "Installing brew scripts . . ."
+else
+    echo "***"
+    echo "***Please run 1-init.sh first!"
+    echo "***"
+    exit -1
+fi
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true

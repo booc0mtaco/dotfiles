@@ -21,8 +21,6 @@ else
     echo "***"
     echo "***Initializing Setup . . ."
     echo "***"
-    
-    # clean up old files if we're running this again
 fi
 
 # Install homebrew ! (http://brew.sh)

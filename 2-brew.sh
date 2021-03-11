@@ -19,7 +19,7 @@ then
     echo "Installing brew scripts . . ."
 else
     echo "***"
-    echo "***Please run 1-* scripts first!"
+    echo "***Please run 1-init.sh first!"
     echo "***"
     exit -1
 fi

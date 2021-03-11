@@ -32,17 +32,12 @@ fi
 brew install the_silver_searcher    # fork of ack that is more performant (command: `ag`)
 brew install bat		    # better than less (cat with colors!)
 brew install exa                    # replacement for ls (e.g., alias="exa --long --git")
-
 brew install tmux		    # replacement for screen. sessions for shells
-$CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
-
 brew install tree		    # see the contents of a directory structure
 brew install cloc                   # Tool that does source code counts and analytics (`cpan Moo::Role` as needed)
 brew install wget		    # retrieve files from the internet
 brew install rename		    # allow for batch renaming operations (util-linux)
-
 brew install vim		    # Install the latest version of VIM
-$CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
 
 # Development tools
 brew install httpie                 # Manage HTTP commands easier than with cURL
@@ -52,19 +47,8 @@ brew install jq                     # Manipulate JSON data like a baus
 brew install python3                # Python language interpreter, v3.x (non-system)
 brew install node                   # NodeJS
 
-# Source Control
 brew install git                    # Git Client, latest version (non-system)
-$CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
-
-# Alternative shells
 brew install fish		    # alternative CLI shell for the 90s!
-
-# TODO: setup for fish config here
-$CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish
-$CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
-$CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
-$CHECKOUT_DIR/utils/apply_fish_functions.sh ack.fish
-$CHECKOUT_DIR/utils/apply_fish_functions.sh top.fish
 
 # Source Control Tools
 # brew install git-flow-avh	    # methodology for managing branches and development
@@ -72,7 +56,6 @@ brew install git-delta              # alternative diff viewer, v2. https://githu
 brew install tig		    # command line tool for viewing commit history
 
 # Source Control Tools (setup)
-$CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
 
 $ Generic Command Line Tools
 brew install thefuck                # Fix your last command because you cannot type !

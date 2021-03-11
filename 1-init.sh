@@ -32,6 +32,19 @@ shopt -s dotglob
 # copy Script Apps (JXA) to /Applications
 cp -R jxa/*.app /Applications
 
+# Link config files from config/ to ~
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
+
+# setup for fish shell config
+$CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh ack.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh top.fish
+
 # Once everything is done, drop a little file in the home directory to say so
 touch ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE)
 

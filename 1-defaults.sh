@@ -110,6 +110,15 @@ defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 ###############################################################################
+# Mail.app                                                                    #
+###############################################################################
+
+# Enable Bundles in the application (v4)
+sudo defaults write “/Library/Preferences/com.apple.mail” EnableBundles 1
+defaults write com.apple.mail EnableBundles -bool true
+defaults write com.apple.mail BundleCompatibilityVersion 4
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 

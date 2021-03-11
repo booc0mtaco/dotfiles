@@ -35,6 +35,7 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
+$CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
 
 # setup for fish shell config
 $CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish

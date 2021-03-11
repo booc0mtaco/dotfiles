@@ -37,46 +37,39 @@ brew install tree		    # see the contents of a directory structure
 brew install cloc                   # Tool that does source code counts and analytics (`cpan Moo::Role` as needed)
 brew install wget		    # retrieve files from the internet
 brew install rename		    # allow for batch renaming operations (util-linux)
-brew install vim		    # Install the latest version of VIM
+brew install fish		    # alternative CLI shell for the 90s!
+
+# install and setup fzf
+brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
+/usr/local/opt/fzf/install          # Set up right away
 
 # Development tools
 brew install httpie                 # Manage HTTP commands easier than with cURL
 brew install jq                     # Manipulate JSON data like a baus
+brew install vim		    # Install the latest version of VIM
+brew install git                    # Git Client, latest version (non-system)
 
 # Programming Environments
 brew install python3                # Python language interpreter, v3.x (non-system)
 brew install node                   # NodeJS
-
-brew install git                    # Git Client, latest version (non-system)
-brew install fish		    # alternative CLI shell for the 90s!
 
 # Source Control Tools
 # brew install git-flow-avh	    # methodology for managing branches and development
 brew install git-delta              # alternative diff viewer, v2. https://github.com/dandavison/delta
 brew install tig		    # command line tool for viewing commit history
 
-# Source Control Tools (setup)
-
-$ Generic Command Line Tools
+# Generic Command Line Tools
 brew install thefuck                # Fix your last command because you cannot type !
 
 # The fuck requires some configuration. Set up is here
 echo "eval (thefuck --alias | tr '\n' ';')" | cat >> ~/.config/fish/config.fish
-
-brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
-/usr/local/opt/fzf/install          # Set up right away
-
-#
 # install bashtop (python version) : https://github.com/aristocratos/bpytop
-#
-
 python3 -m pip install psutil
 brew install osx-cpu-temp
 git clone https://github.com/aristocratos/bpytop.git $CHECKOUT_DIR/bpytop
 cd bpytop
 sudo make install
 cd -
-
 
 #
 # GUI / Desktop App Section
@@ -85,8 +78,6 @@ cd -
 # Editors
 brew cask install typora             # Edit markdown files without split views
 brew cask install iterm2             # Terminal emulator with advanced features
-
-$CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
 
 # Desktop Tools
 brew cask install xquartz	     # open Source compositing engine
@@ -98,9 +89,7 @@ brew cask install itsycal	     # system level calendar in a nice little icon
 brew cask install alfred             # tool similar to quicksilver but so much more
 brew cask install rocket             # tool to make using emoji much easier (slack-like)
 
-#
 # Finder enhancements (QuickLook)
-#
 brew cask install qlmarkdown	     # QuickLook : markdown files
 brew cask install qlstephen	     # Quicklook : text files of different sorts
 brew cask install suspicious-package # Quicklook : view inside zip files before opening them
@@ -125,8 +114,10 @@ brew cask install bitbar
 # Fonts
 #
 
-brew tap homebrew/cask-fonts # install custom fonts via command line
+# set up font cask
+brew tap homebrew/cask-fonts
 
+# install monospace fonts for programming
 brew cask install font-fira-code
 brew cask install font-fira-mono
 brew cask install font-jetbrains-mono

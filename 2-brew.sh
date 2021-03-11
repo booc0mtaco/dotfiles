@@ -75,6 +75,10 @@ cd -
 # GUI / Desktop App Section
 #
 
+# Plugins, etc.
+brew install mailtrackerblocker      # Bundle to block tracking in macOS Mail.app
+echo ">>> In Mail.app, go to Preferences > General > Manage Plug-ins... > check "MailTrackerBlocker.mailbundle" > Apply and Restart Mail";
+
 # Editors
 brew cask install typora             # Edit markdown files without split views
 brew cask install iterm2             # Terminal emulator with advanced features

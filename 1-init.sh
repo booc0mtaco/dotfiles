@@ -28,9 +28,7 @@ fi
 # Install homebrew ! (http://brew.sh)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# install NVM for node virtual environments
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-
+# Prepare option to copy files with prefix '.'
 shopt -s dotglob
 
 # copy Script Apps (JXA) to /Applications
@@ -38,8 +36,6 @@ cp -R jxa/*.app /Applications
 
 # Once everything is done, drop a little file in the home directory to say so
 touch ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE)
-
-. ~/.bash_profile
 
 echo "Initialization completed successfully."
 

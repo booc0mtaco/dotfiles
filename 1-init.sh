@@ -31,6 +31,9 @@ shopt -s dotglob
 cp -R jxa/*.app /Applications
 
 # Link config files from config/ to ~
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .zprofile
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .bash_profile
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .aliases
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig

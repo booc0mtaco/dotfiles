@@ -1,0 +1,10 @@
+#
+# Traversal aliases
+#
+alias dir="ls -laGh"
+
+
+# allow running the previous command by typing `please`
+# @see https://meyerweb.com/eric/thoughts/2020/09/29/polite-bash-commands/ for discussion
+alias please="sudo !!"
+

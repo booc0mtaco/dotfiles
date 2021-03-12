@@ -1,0 +1,19 @@
+# https://wiki.archlinux.org/index.php/readline
+
+# Make tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# Immediately add a trailing slash when autocompleting symlinks to directories
+set mark-symlinked-directories on
+
+# Use the text that has already been typed as the prefix for searching thru commands
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+# allow UTF-8 input and output, insteade of showing stuff like $'\0123\0456'
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# use option + delete to delete the preceding word
+"\e[3;3~": kill-word

@@ -39,6 +39,7 @@ cp -R jxa/*.app /Applications
 
 # Link config files from config/ to ~
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .zprofile
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .inputrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .bash_profile
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .aliases
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf

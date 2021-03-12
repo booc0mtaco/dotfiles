@@ -20,7 +20,7 @@ if [ ! -f $CHECKOUT_DIR/$SOURCE_DIR/$1 ]; then
 fi
 
 # If it does, check to see if a file exists in the home directory
-echo "*** Symlinking $1 from $CHECKOUT_DIR/$SOURCE_DIR . . . ***"
+# echo "*** Symlinking $1 from $CHECKOUT_DIR/$SOURCE_DIR . . . ***"
 
 # if a file exists in the home directory with that name, copy it
 # to a *.bak file.

@@ -16,7 +16,7 @@ fi
 
 if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" 1-init.sh) ]
 then
-    echo "Installing brew scripts . . ."
+    echo "Setting application defaults (macOS). . ."
 else
     echo "***"
     echo "***Please run 1-init.sh first!"

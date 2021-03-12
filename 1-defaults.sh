@@ -24,6 +24,16 @@ else
     exit -1
 fi
 
+# close any open System Preferences Panes, to prevent them from overriding
+# settings we're about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# ask for the administrator password to start
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until this file has finished processing (bg)
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
@@ -142,7 +152,8 @@ sleep 3
 
 for app in "Activity Monitor" "cfprefsd" \
 	    "Dock" "Finder" "Google Chrome" \
-	    "Terminal" "Safari" "SystemUIServer"; do
+	    "Terminal" "Safari" "SystemUIServer" \
+            "Mail"; do
 	    killall "${app}" &> /dev/null
 done
 

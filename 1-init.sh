@@ -10,6 +10,7 @@ CHECKOUT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
 mkdir -p ~/.cache/vim
+mkdir -p ~/.config/fish/functions
 
 if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
@@ -22,7 +23,13 @@ else
 fi
 
 # Install homebrew ! (http://brew.sh)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew -v > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+    echo "brew alerady installed. Continuing . . ."; sleep 2;
+else
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
 
 # Prepare option to copy files with prefix '.'
 shopt -s dotglob

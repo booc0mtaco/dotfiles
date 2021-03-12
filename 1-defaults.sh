@@ -34,12 +34,20 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until this file has finished processing (bg)
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+###############################################################################
+# Globals                                                                     #
+###############################################################################
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Disable automatic termination of inactive apps
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
+###############################################################################
+# Finder/Dock                                                                 #
+###############################################################################
 
 # Finder: Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -63,6 +71,13 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Expand the following File Info panes:
+# “General”, “Open with”, and “Sharing & Permissions”
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+    General -bool true \
+    OpenWith -bool true \
+    Privileges -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
@@ -92,6 +107,10 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
+###############################################################################
+# Safari                                                                      #
+###############################################################################
+
 # Prevent Safari from opening ‘safe’ files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
@@ -108,6 +127,13 @@ defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+# Enable “Do Not Track” in safari
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+
+###############################################################################
+# Terminal                                                                    #
+###############################################################################
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
@@ -138,18 +164,15 @@ sudo defaults write “/Library/Preferences/com.apple.mail” EnableBundles 1
 defaults write com.apple.mail EnableBundles -bool true
 defaults write com.apple.mail BundleCompatibilityVersion 4
 
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
 echo "***"
 echo "*** Done. Note that some of these changes require a logout/restart to take effect."
 echo "***"
 
 touch ~/.dotfiles/.hasrun_defaults_$(stat -f "%Sm" -t "%s" $FILE)
 
-sleep 3
+sleep 2;
 
+# Kill Affected apps
 for app in "Activity Monitor" "cfprefsd" \
 	    "Dock" "Finder" "Google Chrome" \
 	    "Terminal" "Safari" "SystemUIServer" \

@@ -7,3 +7,13 @@ for file in ~/.{aliases,locals}; do
 done;
 unset file;
 
+#
+# Bash options
+#
+
+# Case-insensivive globbing when expanding paths
+shopt -s nocaseglob;
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
+

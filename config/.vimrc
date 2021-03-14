@@ -60,3 +60,5 @@ set backspace=indent,eol,start
 " Set directory for vim to use (backup, locks, etc.)
 set dir=~/.cache/vim
 
+" Setup for using fzf when using vim
+set rtp+=/opt/homebrew/opt/fzf

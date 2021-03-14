@@ -41,7 +41,7 @@ brew install fish		    # alternative CLI shell for the 90s!
 
 # install and setup fzf
 brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
-/usr/local/opt/fzf/install          # Set up right away
+/opt/homebrew/opt/fzf/instal        # ..., and set up right away
 
 # Development tools
 brew install httpie                 # Manage HTTP commands easier than with cURL
@@ -80,28 +80,28 @@ brew install mailtrackerblocker      # Bundle to block tracking in macOS Mail.ap
 echo ">>> In Mail.app, go to Preferences > General > Manage Plug-ins... > check "MailTrackerBlocker.mailbundle" > Apply and Restart Mail";
 
 # Editors
-brew cask install typora             # Edit markdown files without split views
-brew cask install iterm2             # Terminal emulator with advanced features
+brew install typora             # Edit markdown files without split views
+brew install iterm2             # Terminal emulator with advanced features
 
 # Desktop Tools
-brew cask install xquartz	     # open Source compositing engine
-brew cask install the-unarchiver     # UnZIP things from many different formats
-brew cask install maccy              # Clipboard manager (in lieu of Alfred's built-in stuff)
-brew cask install iina		     # Alternative video player 
-brew cask install alt-tab            # Show window previews when tabbing between windows
-brew cask install itsycal	     # system level calendar in a nice little icon
-brew cask install alfred             # tool similar to quicksilver but so much more
-brew cask install rocket             # tool to make using emoji much easier (slack-like)
+brew install xquartz	     # open Source compositing engine
+brew install the-unarchiver     # UnZIP things from many different formats
+brew install maccy              # Clipboard manager (in lieu of Alfred's built-in stuff)
+brew install iina		     # Alternative video player 
+brew install alt-tab            # Show window previews when tabbing between windows
+brew install itsycal	     # system level calendar in a nice little icon
+brew install alfred             # tool similar to quicksilver but so much more
+brew install rocket             # tool to make using emoji much easier (slack-like)
 
 # Finder enhancements (QuickLook)
-brew cask install qlmarkdown	     # QuickLook : markdown files
-brew cask install qlstephen	     # Quicklook : text files of different sorts
-brew cask install suspicious-package # Quicklook : view inside zip files before opening them
-brew cask install qlcolorcode        # Quicklook : color code ... code
-brew cask install quicklook-json     # Quicklook : provide structure to JSON files
-brew cask install qlprettypatch      # Quicklook : show patch files with diff information
-brew cask install quicklook-csv      # Quicklook : show CSV information in context
-brew cask install qlimagesize        # Quicklook : show image metrics and info in context
+brew install qlmarkdown	     # QuickLook : markdown files
+brew install qlstephen	     # Quicklook : text files of different sorts
+brew install suspicious-package # Quicklook : view inside zip files before opening them
+brew install qlcolorcode        # Quicklook : color code ... code
+brew install quicklook-json     # Quicklook : provide structure to JSON files
+brew install qlprettypatch      # Quicklook : show patch files with diff information
+brew install quicklook-csv      # Quicklook : show CSV information in context
+brew install qlimagesize        # Quicklook : show image metrics and info in context
 
 # For Catalina+, "trust" these QuickLook Extensions
 echo "Setting up QuickLook Extensions. . ."
@@ -112,7 +112,7 @@ qlmanage -r cache
 #
 # Other system enhancements
 #
-brew cask install bitbar
+brew install bitbar
 
 #
 # Fonts
@@ -122,9 +122,9 @@ brew cask install bitbar
 brew tap homebrew/cask-fonts
 
 # install monospace fonts for programming
-brew cask install font-fira-code
-brew cask install font-fira-mono
-brew cask install font-jetbrains-mono
+brew install font-fira-code
+brew install font-fira-mono
+brew install font-jetbrains-mono
 
 echo "Restarting Finder. . ."
 killall "Finder" &> /dev/null

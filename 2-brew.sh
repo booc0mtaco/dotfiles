@@ -41,7 +41,7 @@ brew install fish		    # alternative CLI shell for the 90s!
 
 # install and setup fzf
 brew install fzf                    # Fuzzy Finder (for bash, zsh, fish)
-/opt/homebrew/opt/fzf/instal        # ..., and set up right away
+/opt/homebrew/opt/fzf/install       # ..., and set up right away
 
 # Development tools
 brew install httpie                 # Manage HTTP commands easier than with cURL

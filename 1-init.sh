@@ -11,6 +11,7 @@ FILE=`basename "$0"`
 mkdir -p ~/.dotfiles
 mkdir -p ~/.cache/vim
 mkdir -p ~/.config/fish/functions
+mkdir -p ~/.config/omf
 
 if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
@@ -49,12 +50,18 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
 
-# setup for fish shell config
+# setup for fish shell config - functions
 $CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh ack.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh top.fish
+
+# setup for fish shell config - oh-my-fish
+$CHECKOUT_DIR/utils/apply_omf.sh theme
+$CHECKOUT_DIR/utils/apply_omf.sh bundle
+$CHECKOUT_DIR/utils/apply_omf.sh channel
+$CHECKOUT_DIR/utils/apply_omf.sh init.fish
 
 # Once everything is done, drop a little file in the home directory to say so
 touch ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE)

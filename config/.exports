@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Make vim the default editor.
+export EDITOR='vim';
+
+# Make python use UTF-8
+export PYTHONIOENCODING='UTF-8';
+
+# Increase bash history size
+export HISTSIZE='32768';
+
+# Set default language to US English (UTF-8)
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
+
+# Do not clear the screen when quitting a manual page
+export MANPAGER='less -X';
+
+# Silence "we now use zsh" message if using bash"
+export BASH_SILENCE_DEPRECATION_WARNING=1;

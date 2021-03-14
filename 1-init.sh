@@ -26,7 +26,7 @@ fi
 brew -v > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-    echo "brew alerady installed. Continuing . . ."; sleep 2;
+    echo "brew already installed. Continuing . . ."; sleep 2;
 else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
@@ -42,6 +42,7 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh .zprofile
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .inputrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .bash_profile
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .aliases
+$CHECKOUT_DIR/utils/apply_dotfiles.sh .exports
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig

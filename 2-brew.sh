@@ -33,7 +33,6 @@ brew install the_silver_searcher    # fork of ack that is more performant (comma
 brew install bat		    # better than less (cat with colors!)
 brew install exa                    # replacement for ls (e.g., alias="exa --long --git")
 brew install tmux		    # replacement for screen. sessions for shells
-brew install tree		    # see the contents of a directory structure
 brew install cloc                   # Tool that does source code counts and analytics (`cpan Moo::Role` as needed)
 brew install wget		    # retrieve files from the internet
 brew install rename		    # allow for batch renaming operations (util-linux)

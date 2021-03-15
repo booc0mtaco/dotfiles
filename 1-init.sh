@@ -56,6 +56,7 @@ $CHECKOUT_DIR/utils/apply_fish_functions.sh nvm.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh fuck.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh ack.fish
 $CHECKOUT_DIR/utils/apply_fish_functions.sh top.fish
+$CHECKOUT_DIR/utils/apply_fish_functions.sh tree.fish
 
 # setup for fish shell config - oh-my-fish
 $CHECKOUT_DIR/utils/apply_omf.sh theme

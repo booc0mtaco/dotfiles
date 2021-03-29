@@ -1,5 +1,6 @@
 # Set up Brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+brew_path=$(brew --prefix)
+eval "$($brew_path/bin/brew shellenv)"
 
 # setup thefuck
 eval $(thefuck --alias)

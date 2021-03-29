@@ -38,3 +38,8 @@ This will install many useful tools and resources that are managed via homebrew,
 	
 Once done, update the default shell with `chsh`. The path to fish will be `/usr/local/bin/fish`.
 
+### `jxa`
+
+These files are AppleScript (and JS equivalents) that activate certain behaviors as executables.
+They are useful for things that should happen in the UI, and can be triggered by spotlight/alfred or
+similar. 

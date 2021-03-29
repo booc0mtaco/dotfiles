@@ -16,5 +16,5 @@ export LC_ALL='en_US.UTF-8';
 # Do not clear the screen when quitting a manual page
 export MANPAGER='less -X';
 
-# Silence "we now use zsh" message if using bash"
+# Silence "we now use zsh" message if using bash
 export BASH_SILENCE_DEPRECATION_WARNING=1;

@@ -12,6 +12,7 @@ mkdir -p ~/.dotfiles
 mkdir -p ~/.cache/vim
 mkdir -p ~/.config/fish/functions
 mkdir -p ~/.config/omf
+mkdir -p ~/.config/git
 
 if [ -e ~/.dotfiles/.hasrun_init_$(stat -f "%Sm" -t "%s" $FILE) ]
 then
@@ -46,9 +47,12 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh .aliases
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .exports
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tmux.conf
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .vimrc
-$CHECKOUT_DIR/utils/apply_dotfiles.sh .gitconfig
 $CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
+
+# Copy some config files to equivalent ~/.config subdirectories
+SOURCE_DIR="config" DESTINATION_DIR="~/.config/git" $CHECKOUT_DIR/utils/apply_config.sh .gitconfig
+mv ~/.config/git/.gitconfig ~/.config/git/config
 
 # setup for fish shell config - functions
 $CHECKOUT_DIR/utils/apply_fish_functions.sh dir.fish

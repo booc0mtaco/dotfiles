@@ -18,6 +18,6 @@ set line-graphics = utf-8
 set vertical-split = auto
 
 # Mouse setup
-set mouse = yes
+set mouse = no
 set mouse-scroll = 3
 set mouse-wheel-cursor = yes

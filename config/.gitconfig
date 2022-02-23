@@ -16,6 +16,7 @@
 	newHighlight = green bold 22
 [user]
 	name = Andrew Holloway
+	email = booc0mtaco@users.noreply.github.com
 [pull]
 	rebase = false
 

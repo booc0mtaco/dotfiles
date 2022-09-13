@@ -91,6 +91,7 @@ brew install alt-tab                # Show window previews when tabbing between 
 brew install itsycal	            # system level calendar in a nice little icon
 brew install alfred                 # tool similar to quicksilver but so much more
 brew install rocket                 # tool to make using emoji much easier (slack-like)
+brew install rectangle              # Window alignment tool (similar to old-school spectacle)
 
 # Finder enhancements (QuickLook)
 brew install qlmarkdown	            # QuickLook : markdown files

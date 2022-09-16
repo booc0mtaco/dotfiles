@@ -51,7 +51,10 @@ $CHECKOUT_DIR/utils/apply_dotfiles.sh .tigrc
 $CHECKOUT_DIR/utils/apply_dotfiles.sh com.googlecode.iterm2.plist
 
 # Copy some config files to equivalent ~/.config subdirectories
-SOURCE_DIR="config" DESTINATION_DIR="~/.config/git" $CHECKOUT_DIR/utils/apply_config.sh .gitconfig
+# TODO: expand tilde (~) in assignments for zsh
+set -o magicequalsubst
+
+SOURCE_DIR="config" DESTINATION_DIR=~/.config/git $CHECKOUT_DIR/utils/apply_config.sh .gitconfig
 mv ~/.config/git/.gitconfig ~/.config/git/config
 
 # setup for fish shell config - functions

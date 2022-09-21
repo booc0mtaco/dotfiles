@@ -62,3 +62,7 @@ set dir=~/.cache/vim
 
 " Setup for using fzf when using vim
 set rtp+=/opt/homebrew/opt/fzf
+
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+call plug#end()

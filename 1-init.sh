@@ -33,6 +33,10 @@ else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
+# Install vim-plug
+# https://opensource.com/article/20/2/how-install-vim-plugins for more information
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Prepare option to copy files with prefix '.'
 shopt -s dotglob
 

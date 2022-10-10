@@ -92,6 +92,7 @@ brew install itsycal	            # system level calendar in a nice little icon
 brew install alfred                 # tool similar to quicksilver but so much more
 brew install rocket                 # tool to make using emoji much easier (slack-like)
 brew install rectangle              # Window alignment tool (similar to old-school spectacle)
+brew install keycastr               # On-screen tool to visualize key presses during screen recordings
 
 # Finder enhancements (QuickLook)
 brew install qlmarkdown	            # QuickLook : markdown files

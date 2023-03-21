@@ -2,7 +2,7 @@
 # Traversal aliases
 #
 
-alias dir="exa --long --all --group --header"
+alias dir="exa --long --all --group --header --git"
 alias tree="exa --tree"
 
 # alias to restart shell as login

@@ -47,6 +47,7 @@ brew install httpie                 # Manage HTTP commands easier than with cURL
 brew install jq                     # Manipulate JSON data like a baus
 brew install vim		    # Install the latest version of VIM
 brew install git                    # Git Client, latest version (non-system)
+brew install gource                 # Source control visualization tool
 
 # Programming Environments
 brew install python3                # Python language interpreter, v3.x (non-system)

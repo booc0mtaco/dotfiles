@@ -2,8 +2,8 @@
 # Traversal aliases
 #
 
-alias dir="exa --long --all --group --header --git"
-alias tree="exa --tree"
+alias dir="eza --long --all --group --header --git"
+alias tree="eza --tree"
 
 # alias to restart shell as login
 alias reload="exec ${SHELL} -l"

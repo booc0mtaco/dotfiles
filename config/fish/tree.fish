@@ -1,3 +1,3 @@
 function tree
-    exa --tree
+    eza --tree
 end

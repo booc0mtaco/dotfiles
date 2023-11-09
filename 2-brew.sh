@@ -31,7 +31,7 @@ fi
 # command line / system / shell tools
 brew install the_silver_searcher    # fork of ack that is more performant (command: `ag`)
 brew install bat		    # better than less (cat with colors!)
-brew install exa                    # replacement for ls (e.g., alias="exa --long --git")
+brew install eza                    # replacement for ls (e.g., alias="eza --long --git")
 brew install tmux		    # replacement for screen. sessions for shells
 brew install cloc                   # Tool that does source code counts and analytics (`cpan Moo::Role` as needed)
 brew install wget		    # retrieve files from the internet

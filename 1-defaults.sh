@@ -85,6 +85,9 @@ chflags nohidden ~/Library
 # Dock: Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
+# Add a slow-motion zoom when holding shift and using any built-in animations
+defaults write com.apple.dock slow-motion-allowed -bool YES
+
 # Hot corners
 # Possible values:
 #  0: no-op

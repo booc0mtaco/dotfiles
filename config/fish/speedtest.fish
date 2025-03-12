@@ -1,3 +1,3 @@
 function speedtest
-    networkQuality -v
+    networkQuality $argv
 end

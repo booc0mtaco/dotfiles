@@ -1,3 +1,3 @@
 function dir
-	eza --long --git --all --group --header
+	eza --long --git --all --group --header $argv
 end

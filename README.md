@@ -43,3 +43,17 @@ Once done, update the default shell with `chsh`. The path to fish will be `/usr/
 These files are AppleScript (and JS equivalents) that activate certain behaviors as executables.
 They are useful for things that should happen in the UI, and can be triggered by spotlight/alfred or
 similar. 
+
+### Additional setup
+
+Here are some configuration odds and ends that may be interesting:
+
+### macOS
+
+- Enable `sudo` access via TouchID (on supported devices)
+
+1. run `sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local`
+2. edit the new file by commenting out the command to enable TouchID, and save
+
+This will set up the machine to do sudo auth via TouchID instead of typing the (hopefully long)
+computer password.

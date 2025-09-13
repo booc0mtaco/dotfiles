@@ -64,13 +64,9 @@ brew install thefuck                # Fix your last command because you cannot t
 
 # The fuck requires some configuration. Set up is here
 echo "eval (thefuck --alias | tr '\n' ';')" | cat >> ~/.config/fish/config.fish
+
 # install bashtop (python version) : https://github.com/aristocratos/bpytop
-python3 -m pip install psutil
-brew install osx-cpu-temp
-git clone https://github.com/aristocratos/bpytop.git $CHECKOUT_DIR/bpytop
-cd bpytop
-sudo make install
-cd -
+brew install bpytop
 
 #
 # GUI / Desktop App Section

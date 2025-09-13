@@ -66,7 +66,9 @@ brew install thefuck                # Fix your last command because you cannot t
 echo "eval (thefuck --alias | tr '\n' ';')" | cat >> ~/.config/fish/config.fish
 
 # install bashtop (python version) : https://github.com/aristocratos/bpytop
+# and other monitoring tools
 brew install bpytop
+brew install asitop
 
 #
 # GUI / Desktop App Section

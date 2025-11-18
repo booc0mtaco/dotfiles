@@ -1,3 +1,3 @@
 function top
-    bpytop
+    btop
 end

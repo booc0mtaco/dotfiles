@@ -49,6 +49,7 @@ brew install xq                     # Similar to jq, but for (X|HT)ML documents
 brew install vim		    # Install the latest version of VIM
 brew install git                    # Git Client, latest version (non-system)
 brew install gource                 # Source control visualization tool
+brew install gitlogue               # Source control visualization tool (command line-like playback)
 
 # Programming Environments
 brew install python3                # Python language interpreter, v3.x (non-system)

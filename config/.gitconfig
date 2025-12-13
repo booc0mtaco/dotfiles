@@ -17,8 +17,13 @@
 [user]
 	name = Andrew Holloway
 	email = booc0mtaco@users.noreply.github.com
+	signingkey = DFB9212D7A801936
 [pull]
 	rebase = false
 
 [diff]
 	compactionHeuristic = true
+[commit]
+	gpgsign = true
+[rerere]
+	enable = true

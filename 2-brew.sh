@@ -77,8 +77,6 @@ brew install asitop
 #
 
 # Plugins, etc.
-brew install mailtrackerblocker     # Bundle to block tracking in macOS Mail.app
-echo ">>> In Mail.app, go to Preferences > General > Manage Plug-ins... > check "MailTrackerBlocker.mailbundle" > Apply and Restart Mail";
 
 # Editors
 brew install typora                 # Edit markdown files without split views
@@ -97,32 +95,28 @@ brew install rectangle              # Window alignment tool (similar to old-scho
 brew install keycastr               # On-screen tool to visualize key presses during screen recordings
 
 # Finder enhancements (QuickLook)
-brew install qlmarkdown	            # QuickLook : markdown files
-brew install qlstephen	            # Quicklook : text files of different sorts
-brew install suspicious-package     # Quicklook : view inside zip files before opening them
-brew install qlcolorcode            # Quicklook : color code ... code
-brew install quicklook-json         # Quicklook : provide structure to JSON files
-brew install qlprettypatch          # Quicklook : show patch files with diff information
-brew install quicklook-csv          # Quicklook : show CSV information in context
-brew install qlimagesize            # Quicklook : show image metrics and info in context
+# brew install qlmarkdown	            # QuickLook : markdown files
+# brew install qlstephen	            # Quicklook : text files of different sorts
+# brew install suspicious-package     # Quicklook : view inside zip files before opening them
+# brew install qlcolorcode            # Quicklook : color code ... code
+# brew install quicklook-json         # Quicklook : provide structure to JSON files
+# brew install qlprettypatch          # Quicklook : show patch files with diff information
+# brew install quicklook-csv          # Quicklook : show CSV information in context
+# brew install qlimagesize            # Quicklook : show image metrics and info in context
 
 # For Catalina+, "trust" these QuickLook Extensions
-echo "Setting up QuickLook Extensions. . ."
-xattr -cr ~/Library/QuickLook/*.qlgenerator
-qlmanage -r
-qlmanage -r cache
+# echo "Setting up QuickLook Extensions. . ."
+# xattr -cr ~/Library/QuickLook/*.qlgenerator
+# qlmanage -r
+# qlmanage -r cache
 
 #
 # Other system enhancements
 #
-brew install bitbar
 
 #
 # Fonts
 #
-
-# set up font cask
-brew tap homebrew/cask-fonts
 
 # install monospace fonts for programming
 brew install font-fira-code

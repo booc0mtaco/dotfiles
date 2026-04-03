@@ -126,6 +126,8 @@ brew install font-jetbrains-mono
 echo "Restarting Finder. . ."
 killall "Finder" &> /dev/null
 
+echo "Make sure to point iTerm2 to the config in Settings... > Settings (tab)"
+
 echo "***"
 echo "*** Installed brew packages successfully"
 echo "*** Symlinked commands: stree"

@@ -57,3 +57,24 @@ Here are some configuration odds and ends that may be interesting:
 
 This will set up the machine to do sudo auth via TouchID instead of typing the (hopefully long)
 computer password.
+
+### Handling GPG Keys with Github
+
+#### Prerequisites:
+
+```
+brew install gnu-pg pinentry pinentry-mac
+```
+
+For generating new keys, please review the [GitHub documentation on creating new GPG
+Keys][gpg-github-1]. This will set up the basics for new keys, which can be used with GitHub.
+
+If you are migrating keys stored on an old machine, [this Gist][gpg-gist-migration] offers some
+helpful tips.
+
+To tell your git that there is signing available, [review here][gpg-github-2]. The config set up
+here assumes you will do some code signing this way, so all the git config is handled already.
+
+[gpg-github-1]: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+[gpg-github-2]: https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
+[gpg-gist-migration]: https://gist.github.com/angela-d/8b27670bac26e4bf7c431715fef5cc51

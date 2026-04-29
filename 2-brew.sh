@@ -54,6 +54,7 @@ brew install gitlogue               # Source control visualization tool (command
 # Programming Environments
 brew install python3                # Python language interpreter, v3.x (non-system)
 brew install node                   # NodeJS
+brew install nodenv                 # Node version management tool
 
 # Source Control Tools
 # brew install git-flow-avh	    # methodology for managing branches and development
@@ -93,6 +94,7 @@ brew install alfred                 # tool similar to quicksilver but so much mo
 brew install rocket                 # tool to make using emoji much easier (slack-like)
 brew install rectangle              # Window alignment tool (similar to old-school spectacle)
 brew install keycastr               # On-screen tool to visualize key presses during screen recordings
+brew install stats                  # Learn about computer utilization (open-source iStats)
 
 # Finder enhancements (QuickLook)
 # brew install qlmarkdown	            # QuickLook : markdown files
